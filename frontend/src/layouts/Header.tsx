@@ -1,9 +1,45 @@
 'use client'
 
 import Link from "next/link"
+import Script from "next/script";
+import { useEffect } from "react";
 
 const Header = () => {
-
+  useEffect(() => {
+    const loadScripts = async () => {
+      const jquery = document.createElement('script');
+      jquery.src = '/assets/js/jquery.min.js';
+      jquery.async = false; // Carga jQuery de manera sincrónica
+      document.body.appendChild(jquery);
+  
+      jquery.onload = () => {
+        const plugins = document.createElement('script');
+        plugins.src = '/assets/js/plugins.min.js';
+        plugins.async = false; // Cargar plugins después de jQuery
+        document.body.appendChild(plugins);
+  
+        plugins.onload = () => {
+          const isotope = document.createElement('script');
+          isotope.src = '/assets/js/optional/isotope.pkgd.min.js';
+          isotope.async = true;
+          document.body.appendChild(isotope);
+  
+          const bootstrap = document.createElement('script');
+          bootstrap.src = '/assets/js/bootstrap.bundle.min.js';
+          bootstrap.async = true;
+          document.body.appendChild(bootstrap);
+  
+          const main = document.createElement('script');
+          main.src = '/assets/js/main.min.js';
+          main.async = true;
+          document.body.appendChild(main);
+        };
+      };
+    };
+  
+    loadScripts();
+  }, []);
+  
   
 
   return (
@@ -1660,6 +1696,12 @@ const Header = () => {
             {/* End .header-bottom */}
           </header>
           {/* End .header */}
+        {/* JS Scripts */}
+        <Script src="/assets/js/jquery.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/plugins.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/optional/isotope.pkgd.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/main.min.js" strategy="lazyOnload" />
     </>
   )
 }

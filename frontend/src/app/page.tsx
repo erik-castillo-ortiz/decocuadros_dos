@@ -1,8 +1,12 @@
+import SliderComponent from "./components/SliderComponent"
 
 export default function Home() {
   return (
     <>
       <div className="container">
+
+        <SliderComponent />
+
         <div
           className="info-boxes-slider owl-carousel owl-theme "
           data-animation-name="fadeInUpShorter"

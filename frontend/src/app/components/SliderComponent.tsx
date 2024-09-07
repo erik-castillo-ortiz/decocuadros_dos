@@ -15,6 +15,7 @@ const SliderComponent = () => {
       navigation
       loop={true}
       className="home-slider owl-carousel owl-theme nav-circle mb-2"
+      style={{ padding: '2.4rem 0 2.9rem' }}
     >
       <SwiperSlide>
         <div className="home-slide home-slide1 banner">

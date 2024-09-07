@@ -1,11 +1,14 @@
-import SliderComponent from "./components/SliderComponent"
+import SliderComponent from "./components/SliderComponent";
 
 export default function Home() {
   return (
     <>
+        <div className="bg-gray pb-5">
+          <div className="container pb-3">
+            <SliderComponent />
+          </div>
+        </div>
       <div className="container">
-
-        <SliderComponent />
 
         <div
           className="info-boxes-slider owl-carousel owl-theme "
@@ -76,7 +79,7 @@ export default function Home() {
                 className="banner banner1 d-flex align-items-center justify-content-end"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/demoes/demo36/banners/banner1.jpg)"
+                    "url(/assets/images/demoes/demo36/banners/banner1.jpg)",
                 }}
               >
                 <div className="container d-flex align-items-center justify-content-end">
@@ -98,7 +101,7 @@ export default function Home() {
                 className="banner banner2 d-flex align-items-center justify-content-end"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/demoes/demo36/banners/banner2.jpg)"
+                    "url(/assets/images/demoes/demo36/banners/banner2.jpg)",
                 }}
               >
                 <div className="container d-flex align-items-center justify-content-end">
@@ -136,7 +139,9 @@ export default function Home() {
                     />
                   </a>
                   <div className="product-countdown-container custom-product-countdown">
-                    <span className="product-countdown-title">offer ends in:</span>
+                    <span className="product-countdown-title">
+                      offer ends in:
+                    </span>
                     <div
                       className="product-countdown countdown-compact"
                       data-until="2021, 10, 5"
@@ -246,7 +251,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -292,7 +300,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -305,7 +316,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -351,7 +365,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -364,7 +381,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -410,7 +430,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -423,7 +446,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -469,7 +495,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -482,7 +511,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -528,7 +560,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -541,7 +576,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -587,7 +625,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -600,7 +641,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -646,7 +690,10 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a
+                              href="demo36-shop.html"
+                              className="product-category"
+                            >
                               category
                             </a>
                           </div>
@@ -659,7 +706,10 @@ export default function Home() {
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
-                            <span className="ratings" style={{ width: "100%" }} />
+                            <span
+                              className="ratings"
+                              style={{ width: "100%" }}
+                            />
                             {/* End .ratings */}
                             <span className="tooltiptext tooltip-top" />
                           </div>
@@ -691,7 +741,10 @@ export default function Home() {
             <div className="col-lg-3 pr-lg-3 pr-sm-0 col-sm-6 order-1 order-sm-0">
               <div className="shop-list h-100">
                 <h4>Sort By</h4>
-                <ul className="nav nav-tabs flex-sm-column border-0" role="tablist">
+                <ul
+                  className="nav nav-tabs flex-sm-column border-0"
+                  role="tablist"
+                >
                   <li className="nav-item">
                     <a
                       className="nav-link active"
@@ -873,13 +926,15 @@ export default function Home() {
                 className="banner banner3"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/demoes/demo36/banners/banner3.jpg)"
+                    "url(/assets/images/demoes/demo36/banners/banner3.jpg)",
                 }}
               >
                 <div className="container d-flex justify-content-center">
                   <div className="banner-layer text-center">
                     <h4 className="font1">
-                      <i className="font2">Find the Boundaries. Push Through!</i>
+                      <i className="font2">
+                        Find the Boundaries. Push Through!
+                      </i>
                     </h4>
                     <h3 className="text-dark mb-0">MEGA SALE</h3>
                     <h2 className="text-dark">70% OFF</h2>
@@ -950,7 +1005,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1012,7 +1070,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1074,7 +1135,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1136,7 +1200,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1198,7 +1265,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1260,7 +1330,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1332,7 +1405,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1394,7 +1470,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1456,7 +1535,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1528,7 +1610,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1590,7 +1675,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1652,7 +1740,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1724,7 +1815,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1786,7 +1880,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1848,7 +1945,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1920,7 +2020,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -1982,7 +2085,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2044,7 +2150,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2116,7 +2225,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2178,7 +2290,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2240,7 +2355,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2312,7 +2430,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2374,7 +2495,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2436,7 +2560,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2508,7 +2635,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2570,7 +2700,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2632,7 +2765,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2704,7 +2840,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2766,7 +2905,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2828,7 +2970,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2900,7 +3045,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -2962,7 +3110,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3024,7 +3175,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3096,7 +3250,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3158,7 +3315,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3220,7 +3380,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3292,7 +3455,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3354,7 +3520,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3416,7 +3585,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3488,7 +3660,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3550,7 +3725,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3612,7 +3790,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -3649,7 +3830,7 @@ export default function Home() {
                   className="banner banner4 bg-image"
                   style={{
                     backgroundImage:
-                      "url(/assets/images/demoes/demo36/banners/banner4.jpg)"
+                      "url(/assets/images/demoes/demo36/banners/banner4.jpg)",
                   }}
                 >
                   <div className="banner-layer d-flex align-items-center flex-column flex-sm-row justify-content-end">
@@ -3678,7 +3859,7 @@ export default function Home() {
                   className="banner banner5 bg-image"
                   style={{
                     backgroundImage:
-                      "url(/assets/images/demoes/demo36/banners/banner5.jpg)"
+                      "url(/assets/images/demoes/demo36/banners/banner5.jpg)",
                   }}
                 >
                   <div className="banner-layer d-flex align-items-center flex-column flex-sm-row justify-content-end">
@@ -3857,7 +4038,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -3915,7 +4099,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -3973,7 +4160,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -3985,7 +4175,9 @@ export default function Home() {
                   Quick View
                 </a>
                 <div className="product-countdown-container">
-                  <span className="product-countdown-title">offer ends in:</span>
+                  <span className="product-countdown-title">
+                    offer ends in:
+                  </span>
                   <div
                     className="product-countdown countdown-compact"
                     data-until="2021, 10, 5"
@@ -4041,7 +4233,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4099,7 +4294,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4157,7 +4355,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4335,7 +4536,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4393,7 +4597,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4451,7 +4658,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4509,7 +4719,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4567,7 +4780,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4625,7 +4841,10 @@ export default function Home() {
                   />
                 </a>
                 <div className="btn-icon-group">
-                  <a href="#" className="btn-icon btn-add-cart product-type-simple">
+                  <a
+                    href="#"
+                    className="btn-icon btn-add-cart product-type-simple"
+                  >
                     <i className="icon-shopping-cart" />
                   </a>
                 </div>
@@ -4679,7 +4898,7 @@ export default function Home() {
             data-animation-delay={100}
             style={{
               backgroundImage:
-                "url(/assets/images/demoes/demo36/banners/banner6.jpg)"
+                "url(/assets/images/demoes/demo36/banners/banner6.jpg)",
             }}
           >
             <div className="container banner-content">
@@ -5466,7 +5685,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -5502,9 +5724,14 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
-                              <span className="tooltiptext tooltip-top">5.00</span>
+                              <span className="tooltiptext tooltip-top">
+                                5.00
+                              </span>
                             </div>
                             {/* End .product-ratings */}
                           </div>
@@ -5532,11 +5759,16 @@ export default function Home() {
                         <div className="product-details">
                           <h3 className="product-title">
                             {" "}
-                            <a href="demo36-product.html">Palm Print Jacket</a>{" "}
+                            <a href="demo36-product.html">
+                              Palm Print Jacket
+                            </a>{" "}
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -5570,9 +5802,14 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
-                              <span className="tooltiptext tooltip-top">5.00</span>
+                              <span className="tooltiptext tooltip-top">
+                                5.00
+                              </span>
                             </div>
                             {/* End .product-ratings */}
                           </div>
@@ -5604,7 +5841,10 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
                             </div>
@@ -5638,9 +5878,14 @@ export default function Home() {
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
-                              <span className="ratings" style={{ width: "100%" }} />
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
                               {/* End .ratings */}
-                              <span className="tooltiptext tooltip-top">5.00</span>
+                              <span className="tooltiptext tooltip-top">
+                                5.00
+                              </span>
                             </div>
                             {/* End .product-ratings */}
                           </div>
@@ -5669,7 +5914,9 @@ export default function Home() {
             data-animation-duration={1000}
           >
             <div className="headding">
-              <h4 className="section-title text-transform-none">Featured Brands</h4>
+              <h4 className="section-title text-transform-none">
+                Featured Brands
+              </h4>
             </div>
             <div
               className="brands-slider owl-carousel bg-white owl-theme nav-circle images-center"
@@ -5860,7 +6107,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -5917,7 +6167,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -5974,7 +6227,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6031,7 +6287,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6088,7 +6347,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6145,7 +6407,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6202,7 +6467,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6295,7 +6563,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6352,7 +6623,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6409,7 +6683,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6466,7 +6743,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -6559,7 +6839,10 @@ export default function Home() {
                     <div className="product-details">
                       <div className="category-wrap">
                         <div className="category-list">
-                          <a href="demo36-shop.html" className="product-category">
+                          <a
+                            href="demo36-shop.html"
+                            className="product-category"
+                          >
                             category
                           </a>
                         </div>
@@ -7098,6 +7381,5 @@ export default function Home() {
         </div>
       </div>
     </>
-
   );
 }

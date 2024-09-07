@@ -8423,7 +8423,7 @@ a:focus {
   position: relative;
   background-color: #ccc;
 }
-.home-slide:after, .home-slide:before,
+/* .home-slide:after, .home-slide:before,
 .category-slide:after,
 .category-slide:before {
   position: absolute;
@@ -8436,7 +8436,7 @@ a:focus {
   border-top-color: #3050ff;
   border-image: none;
   content: "";
-}
+} */
 .home-slide:before,
 .category-slide:before {
   animation: spin 1s infinite ease;

@@ -1,3 +1,6 @@
+import Script from "next/script";
+
+
 
 export default function Home() {
   return (
@@ -7455,6 +7458,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+      {/* JS Scripts */}
+      <Script src="/assets/js/jquery.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
+      <Script src="/assets/js/optional/isotope.pkgd.min.js" strategy="lazyOnload" />
+      <Script src="/assets/js/plugins.min.js" strategy="lazyOnload" />
+      <Script src="/assets/js/main.min.js" strategy="lazyOnload" />
     </>
 
   );

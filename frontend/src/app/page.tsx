@@ -1,377 +1,10 @@
-import SliderComponent from "./components/SliderComponent"
-
-
 
 export default function Home() {
   return (
     <>
-      <div className="bg-gray pb-5">
-        <div className="container pb-3">
-          <div
-            className="home-slider slide-animate owl-carousel owl-theme nav-circle mb-2"
-            data-owl-options="{
-				'loop': false
-			}"
-          >
-            <div className="home-slide home-slide1 banner">
-              <img
-                className="slide-bg"
-                src="/assets/images/demoes/demo36/slider/slide-1.jpg"
-                alt="slider image"
-              />
-              <div className="container d-flex align-items-sm-center justify-content-sm-between justify-content-center flex-column flex-sm-row">
-                <div className="banner-content content-left text-sm-right mb-sm-0 mb-2">
-                  <h2
-                    className="text-shadow text-white font1 mb-0 appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={100}
-                  >
-                    TRENDY
-                  </h2>
-                  <h1
-                    className="text-dark appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={400}
-                  >
-                    GAMING
-                  </h1>
-                  <h3
-                    className="text-dark mb-0 appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={600}
-                  >
-                    CHAIRS
-                  </h3>
-                  <h2
-                    className="text-shadow text-white font1 mr-0 mb-0 appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={800}
-                  >
-                    DEALS
-                  </h2>
-                </div>
-                {/* End .banner-layer */}
-                <div
-                  className="banner-content content-right appear-animate"
-                  data-animation-name="fadeInUpShorter"
-                  data-animation-delay={1000}
-                >
-                  <h4 className="text-transform-none">Porto Game Chair</h4>
-                  <h5 className="text-price text-transform-none mb-0">
-                    from <span>$299.99</span>
-                  </h5>
-                  <h5 className="coupon-sale-text">
-                    <span>to</span>
-                    <b className="text-white align-middle">
-                      <sup>$</sup>
-                      <em className="align-text-top">199</em>
-                      <sup>99</sup>
-                    </b>
-                  </h5>
-                  <a href="demo36-shop.html" className="btn btn-dark btn-lg">
-                    Shop Now
-                  </a>
-                </div>
-                {/* End .banner-layer */}
-              </div>
-            </div>
-            {/* End .home-slide */}
-            <div className="home-slide home-slide2 banner banner-md-vw">
-              <img
-                className="slide-bg"
-                src="/assets/images/demoes/demo36/slider/slide-2.jpg"
-                alt="slider image"
-              />
-              <div className="container d-flex align-items-sm-center justify-content-center justify-content-sm-between flex-column-reverse flex-sm-row">
-                <div
-                  className="banner-content content-left mt-2 mt-sm-0 appear-animate"
-                  data-animation-name="fadeInUpShorter"
-                  data-animation-delay={1000}
-                >
-                  <h4 className="text-transform-none">Best Gadtets Deals</h4>
-                  <h5 className="coupon-sale-text">
-                    <span>from</span>
-                    <b className="text-white align-middle">
-                      <sup>$</sup>
-                      <em className="align-text-top">1</em>
-                      <sup>99</sup>
-                    </b>
-                  </h5>
-                  <a href="demo36-shop.html" className="btn btn-dark btn-lg">
-                    Shop Now
-                  </a>
-                </div>
-                {/* End .banner-layer */}
-                <div className="banner-content content-right text-sm-right">
-                  <h2
-                    className="text-shadow text-white font1 mb-0 appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={100}
-                  >
-                    NEW
-                  </h2>
-                  <h1
-                    className="text-dark appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={400}
-                  >
-                    SELECTED
-                  </h1>
-                  <h3
-                    className="text-dark mb-0 appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={600}
-                  >
-                    DEALS
-                  </h3>
-                  <h2
-                    className="text-shadow text-white font1 mr-0 mb-0 appear-animate"
-                    data-animation-name="fadeInUpShorter"
-                    data-animation-delay={800}
-                  >
-                    RELEASES
-                  </h2>
-                </div>
-                {/* End .banner-layer */}
-              </div>
-            </div>
-            {/* End .home-slide */}
-          </div>
-          {/* End .home-slider */}
-          <div
-            className="categories-section appear-animate"
-            data-animation-name="fadeIn"
-            data-animation-delay={100}
-          >
-            <div
-              className="categories-slider owl-carousel owl-theme show-nav-hover nav-outer"
-              data-owl-options="{
-                      'responsive': {
-                          '0': {
-                              'items': 2
-                          },
-                          '480': {
-                              'items': 3
-                          },
-                          '576': {
-                              'items': 4
-                          },
-                          '768': {
-                              'items': 5
-                          },
-                          '992': {
-                              'items': 7
-                          },
-                          '1200': {
-                              'items': 8
-                          }
-                      }
-                  }"
-            >
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-1.jpg"
-                      alt="category"
-                      width={280}
-                      height={240}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Fashion</h3>
-                    <span>
-                      <mark className="count">7</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-2.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Furniture</h3>
-                    <span>
-                      <mark className="count">1</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-3.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Sports</h3>
-                    <span>
-                      <mark className="count">2</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-4.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Toys</h3>
-                    <span>
-                      <mark className="count">2</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-5.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Cameras</h3>
-                    <span>
-                      <mark className="count">1</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-6.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Gaming</h3>
-                    <span>
-                      <mark className="count">1</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-7.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Headphones</h3>
-                    <span>
-                      <mark className="count">1</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div
-                className="product-category appear-animate"
-                data-animation-name="fadeInUpShorter"
-              >
-                <a href="demo36-shop.html">
-                  <figure>
-                    <img
-                      src="/assets/images/demoes/demo36/products/categories/category-8.jpg"
-                      alt="category"
-                      width={220}
-                      height={220}
-                    />
-                  </figure>
-                  <div className="category-content">
-                    <h3>Smartphones</h3>
-                    <span>
-                      <mark className="count">1</mark> products
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            className="promo-section bg-white appear-animate"
-            data-animation-name="fadeIn"
-            data-animation-delay={100}
-          >
-            <div className="promo-banner banner container text-uppercase bg-transparent">
-              <div
-                className=" banner-content d-flex align-items-center justify-content-center flex-column
-                      flex-md-row text-center"
-              >
-                <h1 className="text-white text-animate text-shadow font1">
-                  DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD OUR
-                  APP DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD
-                  OUR APP
-                </h1>
-                <h6 className="font1 mb-md-0 mb-1 pt-2 pt-md-0 pb-1">
-                  EXCLUSIVE SALES, GET IT NOW!
-                </h6>
-                <h4 className="d-inline-block mb-0 pl-3 pr-3 pt-1 pb-1 mb-md-0 mb-1">
-                  DOWNLOAD OUR APP
-                </h4>
-                <a href="demo36-shop.html" className="btn btn-dark">
-                  Get NOW!
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="container">
-
-        <SliderComponent/>
         <div
-          className="info-boxes-slider owl-carousel owl-theme appear-animate"
+          className="info-boxes-slider owl-carousel owl-theme "
           data-animation-name="fadeInUpShorter"
           data-animation-delay={200}
           data-owl-options="{
@@ -429,7 +62,7 @@ export default function Home() {
         </div>
         {/* End .info-boxes-slider */}
         <div
-          className="banner-section appear-animate"
+          className="banner-section "
           data-animation-name="fadeInUpShorter"
           data-animation-delay={200}
         >
@@ -483,14 +116,14 @@ export default function Home() {
             Special Offers
           </h2>
           <div
-            className="row appear-animate"
+            className="row "
             data-animation-name="fadeInUpShorter"
             data-animation-delay={200}
           >
             <div className="col-md-4 mb-2 mb-md-0">
               <div className="product-default deal-product">
                 <figure>
-                  <a href="demo36-product.html">
+                  <a href="/">
                     <img
                       src="/assets/images/demoes/demo36/products/product-1.jpg"
                       width={450}
@@ -511,12 +144,12 @@ export default function Home() {
                 </figure>
                 <div className="product-details">
                   <div className="category-list">
-                    <a href="demo36-shop.html" className="product-category">
+                    <a href="/" className="product-category">
                       Category
                     </a>
                   </div>
                   <h3 className="product-title">
-                    <a href="demo36-product.html">Drone Pro</a>
+                    <a href="/">Drone Pro</a>
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
@@ -565,7 +198,7 @@ export default function Home() {
                   <div className="col-xl-3 col-sm-4 col-6">
                     <div className="product-default inner-quickview inner-icon">
                       <figure>
-                        <a href="demo36-product.html">
+                        <a href="/">
                           <img
                             src="/assets/images/demoes/demo36/products/product-2.jpg"
                             width={239}
@@ -596,16 +229,16 @@ export default function Home() {
                       <div className="product-details">
                         <div className="category-wrap">
                           <div className="category-list">
-                            <a href="demo36-shop.html" className="product-category">
+                            <a href="/" className="product-category">
                               category
                             </a>
                           </div>
-                          <a href="wishlist.html" className="btn-icon-wish">
+                          <a href="/" className="btn-icon-wish">
                             <i className="icon-heart" />
                           </a>
                         </div>
                         <h3 className="product-title">
-                          <a href="demo36-product.html">PT Speaker</a>
+                          <a href="/">PT Speaker</a>
                         </h3>
                         <div className="ratings-container">
                           <div className="product-ratings">
@@ -1045,7 +678,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="category-filter-section bg-gray appear-animate"
+        className="category-filter-section bg-gray "
         data-animation-name="fadeInUpShorter"
         data-animation-delay={200}
       >
@@ -4001,7 +3634,7 @@ export default function Home() {
       <div className="bg-gray">
         <div className="container">
           <div
-            className="categories-container bg-white appear-animate"
+            className="categories-container bg-white "
             data-animation-name="fadeIn"
             data-animation-delay={100}
           >
@@ -4194,7 +3827,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="products-slider owl-carousel owl-theme nav-outer carousel-with-bg show-nav-hover nav-image-center appear-animate"
+            className="products-slider owl-carousel owl-theme nav-outer carousel-with-bg show-nav-hover nav-image-center "
             data-animation-name="fadeIn"
             data-animation-delay={100}
             data-owl-options="{
@@ -4569,7 +4202,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="categories-container categories-container-two bg-white appear-animate"
+            className="categories-container categories-container-two bg-white "
             data-animation-name="fadeIn"
             data-animation-delay={100}
           >
@@ -4672,7 +4305,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="products-slider product-slider-two owl-carousel carousel-with-bg owl-theme nav-outer show-nav-hover nav-image-center pb-0 appear-animate"
+            className="products-slider product-slider-two owl-carousel carousel-with-bg owl-theme nav-outer show-nav-hover nav-image-center pb-0 "
             data-animation-name="fadeIn"
             data-animation-delay={100}
             data-owl-options="{
@@ -5037,7 +4670,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="sale-banner banner bg-image mb-4 appear-animate"
+            className="sale-banner banner bg-image mb-4 "
             data-animation-name="fadeIn"
             data-animation-delay={100}
             style={{
@@ -5075,7 +4708,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="bg-white appear-animate"
+            className="bg-white "
             data-animation-name="fadeIn"
             data-animation-delay={100}
           >
@@ -5133,7 +4766,7 @@ export default function Home() {
                   {/* End .banner */}
                 </div>
                 <div
-                  className="product-slider-tab appear-animate bg-white carousel-with-bg"
+                  className="product-slider-tab  bg-white carousel-with-bg"
                   data-animation-name="fadeIn"
                   data-animation-delay={100}
                 >
@@ -6026,7 +5659,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="brands-section mt-2 mb-3 appear-animate"
+            className="brands-section mt-2 mb-3 "
             data-animation-delay={200}
             data-animation-name="fadeIn"
             data-animation-duration={1000}
@@ -6102,7 +5735,7 @@ export default function Home() {
             {/* End .brands-slider */}
           </div>
           <div
-            className="product-slider-tab selected-products-section appear-animate bg-white"
+            className="product-slider-tab selected-products-section  bg-white"
             data-animation-name="fadeIn"
             data-animation-delay={100}
           >
@@ -6956,7 +6589,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="top-notice bg-dark text-white  top-notice-bg appear-animate"
+            className="top-notice bg-dark text-white  top-notice-bg "
             data-animation-name="fadeIn"
             data-animation-delay={100}
           >
@@ -6981,7 +6614,7 @@ export default function Home() {
           </div>
           {/* End .top-notice */}
           <div
-            className="recent-products-section appear-animate"
+            className="recent-products-section "
             data-animation-name="fadeIn"
             data-animation-delay={100}
           >
@@ -7460,8 +7093,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
-
     </>
 
   );

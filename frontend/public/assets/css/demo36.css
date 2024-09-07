@@ -798,7 +798,7 @@
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  display: inline;
+  *display: inline;
 }
 .owl-theme .owl-dots .owl-dot span {
   position: relative;
@@ -7652,14 +7652,14 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-body:not(.loaded) > :not(.loading-overlay) {
+/* body:not(.loaded) > :not(.loading-overlay) {
   visibility: hidden !important;
   transition: none !important;
 }
 body:not(.loaded) > :not(.loading-overlay) * {
   visibility: hidden !important;
   transition: none !important;
-}
+} */
 
 ::selection {
   background-color: #3050ff;

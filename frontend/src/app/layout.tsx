@@ -7,7 +7,15 @@ import TopNotice from "@/layouts/TopNotice";
 import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
 import MobileMenu from "@/layouts/MobileMenu";
+import { Poppins } from 'next/font/google'
 
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  fallback: ['sans-serif']
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +30,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`loaded s`}>
+      <body className={`loaded ${poppins.className}`}>
         <div className="page-wrapper">
           <TopNotice />
           <Header />

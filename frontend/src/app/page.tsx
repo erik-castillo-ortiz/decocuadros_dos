@@ -1,3 +1,5 @@
+import CategoriesSlider from "./components/CategoriesSlider";
+import PromoSection from "./components/PromoSection";
 import SliderComponent from "./components/SliderComponent";
 
 export default function Home() {
@@ -6,6 +8,15 @@ export default function Home() {
         <div className="bg-gray pb-5">
           <div className="container pb-3">
             <SliderComponent />
+            <CategoriesSlider />
+            <PromoSection
+              headingText="DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD OUR APP"
+              subText="EXCLUSIVE SALES, GET IT NOW!"
+              promoText="DOWNLOAD OUR APP"
+              buttonText="Get NOW!"
+              buttonLink="/tienda" 
+            />
+
           </div>
         </div>
       <div className="container">

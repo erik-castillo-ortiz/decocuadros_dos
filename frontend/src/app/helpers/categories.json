@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Fashion",
+        "image": "assets/images/demoes/demo36/products/categories/category-1.jpg",
+        "products": 7,
+        "slug": "fashion"
+    },
+    {
+        "title": "Furniture",
+        "image": "assets/images/demoes/demo36/products/categories/category-2.jpg",
+        "products": 1,
+        "slug": "furniture"
+    },
+    {
+        "title": "Sports",
+        "image": "assets/images/demoes/demo36/products/categories/category-3.jpg",
+        "products": 2,
+        "slug": "sports"
+
+    },
+    {
+        "title": "Toys",
+        "image": "assets/images/demoes/demo36/products/categories/category-4.jpg",
+        "products": 2,
+        "slug": "toys"
+
+    },
+    {
+        "title": "Cameras",
+        "image": "assets/images/demoes/demo36/products/categories/category-5.jpg",
+        "products": 1,
+        "slug": "cameras"
+
+    },
+    {
+        "title": "Gaming",
+        "image": "assets/images/demoes/demo36/products/categories/category-6.jpg",
+        "products": 1,
+        "slug": "gaming"
+
+    },
+    {
+        "title": "Headphones",
+        "image": "assets/images/demoes/demo36/products/categories/category-7.jpg",
+        "products": 1,
+        "slug": "headphones"
+
+    },
+    {
+        "title": "Smartphones",
+        "image": "assets/images/demoes/demo36/products/categories/category-8.jpg",
+        "products": 1,
+        "slug": "smartphones"
+
+    },
+    {
+        "title": "LALALA",
+        "image": "assets/images/demoes/demo36/products/categories/category-8.jpg",
+        "products": 1,
+        "slug": "lalala"
+    }
+  ]
+  

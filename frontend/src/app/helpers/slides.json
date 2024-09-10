@@ -1,0 +1,29 @@
+{
+    "slide1": {
+      "image": "/assets/images/demoes/demo36/slider/slide-1.jpg",
+      "title1": "TRENDY",
+      "title2": "GAMING",
+      "title3": "CHAIRS",
+      "title4": "DEALS",
+      "productName": "Porto Game Chair",
+      "oldPrice": "$299.99",
+      "newPriceMain": "199",
+      "newPriceDecimal": "99",
+      "buttonText": "Shop Now",
+      "buttonLink": "/tienda"
+    },
+    "slide2": {
+      "image": "/assets/images/demoes/demo36/slider/slide-2.jpg",
+      "title1": "NEW",
+      "title2": "SELECTED",
+      "title3": "DEALS",
+      "title4": "RELEASES",
+      "productName": "Best Gadgets Deals",
+      "oldPrice": "$1.99",
+      "newPriceMain": "1",
+      "newPriceDecimal": "99",
+      "buttonText": "Shop Now",
+      "buttonLink": "/tienda"
+    }
+  }
+  

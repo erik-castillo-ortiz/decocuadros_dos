@@ -1,0 +1,16 @@
+{
+    "banner1": {
+      "image": "/assets/images/demoes/demo36/banners/banner1.jpg",
+      "title1_part1": "UP TO",
+      "title1_part2": "50%",
+      "title2": "OFF",
+      "subtext": "FLASH SALES ON",
+      "highlightText": "NICE SHOES"
+    },
+    "banner2": {
+      "image": "/assets/images/demoes/demo36/banners/banner2.jpg",
+      "title1": "TOP ELECTRONIC",
+      "title2": "FOR GIFTS"
+    }
+  }
+  

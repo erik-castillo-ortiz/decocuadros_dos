@@ -1,4 +1,5 @@
 import CategoriesSlider from "./components/CategoriesSlider";
+import InfoBoxesSlider from "./components/InfoBoxesSlider";
 import PromoSection from "./components/PromoSection";
 import SliderComponent from "./components/SliderComponent";
 
@@ -21,64 +22,7 @@ export default function Home() {
         </div>
       <div className="container">
 
-        <div
-          className="info-boxes-slider owl-carousel owl-theme "
-          data-animation-name="fadeInUpShorter"
-          data-animation-delay={200}
-          data-owl-options="{
-					'dots': false,
-					'loop': false,
-					'responsive': {
-						'576': {
-							'items': 2
-						},
-						'992': {
-							'items': 3
-                  },
-                  '1400': {
-							'items': 4
-						}
-					}
-				}"
-        >
-          <div className="info-box info-box-icon-left">
-            <i className="icon-shipping text-primary" />
-            <div className="info-box-content">
-              <h4>FREE SHIPPING &amp; RETURN</h4>
-              <p className="text-body">Free shipping on all orders over $99.</p>
-            </div>
-            {/* End .info-box-content */}
-          </div>
-          {/* End .info-box */}
-          <div className="info-box info-box-icon-left">
-            <i className="icon-money text-primary" />
-            <div className="info-box-content">
-              <h4>MONEY BACK GUARANTEE</h4>
-              <p className="text-body">100% money back guarantee</p>
-            </div>
-            {/* End .info-box-content */}
-          </div>
-          {/* End .info-box */}
-          <div className="info-box info-box-icon-left">
-            <i className="icon-support text-primary" />
-            <div className="info-box-content">
-              <h4>ONLINE SUPPORT 24/7</h4>
-              <p className="text-body">Lorem ipsum dolor sit amet.</p>
-            </div>
-            {/* End .info-box-content */}
-          </div>
-          {/* End .info-box */}
-          <div className="info-box info-box-icon-left">
-            <i className="icon-password-lock text-primary" />
-            <div className="info-box-content">
-              <h4>SECURE PAYMENT</h4>
-              <p className="text-body">Lorem ipsum dolor sit amet.</p>
-            </div>
-            {/* End .info-box-content */}
-          </div>
-          {/* End .info-box */}
-        </div>
-        {/* End .info-boxes-slider */}
+        <InfoBoxesSlider/>
         <div
           className="banner-section "
           data-animation-name="fadeInUpShorter"

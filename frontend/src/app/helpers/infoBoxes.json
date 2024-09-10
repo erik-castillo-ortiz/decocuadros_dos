@@ -1,0 +1,23 @@
+[
+    {
+      "icon": "icon-shipping",
+      "title": "FREE SHIPPING & RETURN",
+      "description": "Free shipping on all orders over $99."
+    },
+    {
+      "icon": "icon-money",
+      "title": "MONEY BACK GUARANTEE",
+      "description": "100% money back guarantee"
+    },
+    {
+      "icon": "icon-support",
+      "title": "ONLINE SUPPORT 24/7",
+      "description": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "icon": "icon-password-lock",
+      "title": "SECURE PAYMENT",
+      "description": "Lorem ipsum dolor sit amet."
+    }
+  ]
+  

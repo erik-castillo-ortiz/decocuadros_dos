@@ -1,0 +1,172 @@
+{
+  "sectionTitle": "Special Offers",
+  "featuredProduct": {
+    "id": 1,
+    "name": "Drone Pro",
+    "image": "/assets/images/demoes/demo36/products/product-1.jpg",
+    "category": "Drone",
+    "categoryId": 1,
+    "rating": 80,
+    "oldPrice": "$59.00",
+    "newPrice": "$49.00",
+    "offerEnds": "2024-09-10 23:59:59"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "PT Speaker",
+      "image": "/assets/images/demoes/demo36/products/product-2.jpg",
+      "category": "Speakers",
+      "categoryId": 2,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": true,
+      "discount": "-20%"
+    },
+    {
+      "id": 2,
+      "name": "Beats Solo HD Drenched",
+      "image": "/assets/images/demoes/demo36/products/product-3.jpg",
+      "category": "Headphones",
+      "categoryId": 3,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 3,
+      "name": "Palm Print Jacket",
+      "image": "/assets/images/demoes/demo36/products/product-4.jpg",
+      "category": "Jackets",
+      "categoryId": 4,
+      "rating": 90,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 4,
+      "name": "Camera",
+      "image": "/assets/images/demoes/demo36/products/product-5.jpg",
+      "category": "Cameras",
+      "categoryId": 5,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 5,
+      "name": "Red Football",
+      "image": "/assets/images/demoes/demo36/products/product-6.jpg",
+      "category": "Sports",
+      "categoryId": 6,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 6,
+      "name": "Soft Hat",
+      "image": "/assets/images/demoes/demo36/products/product-7.jpg",
+      "category": "Hats",
+      "categoryId": 7,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 7,
+      "name": "PT Bag",
+      "image": "/assets/images/demoes/demo36/products/product-8.jpg",
+      "category": "Bags",
+      "categoryId": 8,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 8,
+      "name": "GM Camaro SS Original",
+      "image": "/assets/images/demoes/demo36/products/product-9.jpg",
+      "category": "Toys",
+      "categoryId": 9,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 9,
+      "name": "Drone Pro",
+      "image": "/assets/images/demoes/demo36/products/product-1.jpg",
+      "category": "Drone",
+      "categoryId": 1,
+      "rating": 80,
+      "oldPrice": "$59.00",
+      "newPrice": "$49.00",
+      "isHot": true,
+      "discount": "-30%"
+    },
+    {
+      "id": 10,
+      "name": "PT Speaker",
+      "image": "/assets/images/demoes/demo36/products/product-2.jpg",
+      "category": "Kids Fashion",
+      "categoryId": 1,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": true,
+      "discount": "-20%"
+    },
+    {
+      "id": 11,
+      "name": "Soft Hat",
+      "image": "/assets/images/demoes/demo36/products/product-7.jpg",
+      "category": "Accessories",
+      "categoryId": 5,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 12,
+      "name": "Red Football",
+      "image": "/assets/images/demoes/demo36/products/product-6.jpg",
+      "category": "Pants & Denim",
+      "categoryId": 6,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    },
+    {
+      "id": 13,
+      "name": "GM Camaro SS Original",
+      "image": "/assets/images/demoes/demo36/products/product-9.jpg",
+      "category": "Tees, Knits & Polos",
+      "categoryId": 7,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null
+    }
+  ]
+}

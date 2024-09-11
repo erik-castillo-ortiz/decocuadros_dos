@@ -1,0 +1,25 @@
+{
+    "categories": [
+      { "id": 1, "name": "Kids Fashion" },
+      { "id": 2, "name": "Casual Shoes" },
+      { "id": 3, "name": "Spring & Autumn" },
+      { "id": 4, "name": "Man" },
+      { "id": 5, "name": "Accessories" },
+      { "id": 6, "name": "Pants & Denim" },
+      { "id": 7, "name": "Tees, Knits & Polos" },
+      { "id": 8, "name": "Watch Fashion" },
+      { "id": 9, "name": "Woman" },
+      { "id": 10, "name": "Accessories" },
+      { "id": 11, "name": "Dresses & Skirts" },
+      { "id": 12, "name": "Shoes & Boots" },
+      { "id": 13, "name": "Top & Blouses" }
+    ],
+    "banner": {
+      "title": "MEGA SALE",
+      "subtitle": "Find the Boundaries. Push Through!",
+      "discountText": "70% OFF",
+      "startingPrice": "$199.99",
+      "backgroundImage": "/assets/images/demoes/demo36/banners/banner3.jpg"
+    }
+  }
+  

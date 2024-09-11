@@ -1,103 +1,159 @@
 {
-  "sectionTitle": "Special Offers",
-  "featuredProduct": {
-    "id": 1,
-    "name": "Drone Pro",
-    "image": "/assets/images/demoes/demo36/products/product-1.jpg",
-    "category": "Drone",
-    "rating": 80,
-    "oldPrice": "$59.00",
-    "newPrice": "$49.00",
-    "offerEnds": "2024-09-10 23:59:59"
-  },
-  "products": [
-    {
+    "sectionTitle": "Special Offers",
+    "featuredProduct": {
       "id": 1,
-      "name": "PT Speaker",
-      "image": "/assets/images/demoes/demo36/products/product-2.jpg",
-      "category": "Speakers",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": true,
-      "discount": "-20%"
+      "name": "Drone Pro",
+      "image": "/assets/images/demoes/demo36/products/product-1.jpg",
+      "category": "Drone",
+      "rating": 80,
+      "oldPrice": "$59.00",
+      "newPrice": "$49.00",
+      "offerEnds": "2024-09-10 23:59:59"
     },
-    {
-      "id": 2,
-      "name": "Beats Solo HD Drenched",
-      "image": "/assets/images/demoes/demo36/products/product-3.jpg",
-      "category": "Headphones",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    },
-    {
-      "id": 3,
-      "name": "Palm Print Jacket",
-      "image": "/assets/images/demoes/demo36/products/product-4.jpg",
-      "category": "Jackets",
-      "rating": 90,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    },
-    {
-      "id": 4,
-      "name": "Camera",
-      "image": "/assets/images/demoes/demo36/products/product-5.jpg",
-      "category": "Cameras",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    },
-    {
-      "id": 5,
-      "name": "Red Football",
-      "image": "/assets/images/demoes/demo36/products/product-6.jpg",
-      "category": "Sports",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    },
-    {
-      "id": 6,
-      "name": "Soft Hat",
-      "image": "/assets/images/demoes/demo36/products/product-7.jpg",
-      "category": "Hats",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    },
-    {
-      "id": 7,
-      "name": "PT Bag",
-      "image": "/assets/images/demoes/demo36/products/product-8.jpg",
-      "category": "Bags",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    },
-    {
-      "id": 8,
-      "name": "GM Camaro SS Original",
-      "image": "/assets/images/demoes/demo36/products/product-9.jpg",
-      "category": "Toys",
-      "rating": 100,
-      "oldPrice": "$29.00",
-      "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null
-    }
-  ]
-}
+    "products": [
+      {
+        "id": 1,
+        "name": "PT Speaker",
+        "image": "/assets/images/demoes/demo36/products/product-2.jpg",
+        "category": "Speakers",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": true,
+        "discount": "-20%"
+      },
+      {
+        "id": 2,
+        "name": "Beats Solo HD Drenched",
+        "image": "/assets/images/demoes/demo36/products/product-3.jpg",
+        "category": "Headphones",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 3,
+        "name": "Palm Print Jacket",
+        "image": "/assets/images/demoes/demo36/products/product-4.jpg",
+        "category": "Jackets",
+        "rating": 90,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 4,
+        "name": "Camera",
+        "image": "/assets/images/demoes/demo36/products/product-5.jpg",
+        "category": "Cameras",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 5,
+        "name": "Red Football",
+        "image": "/assets/images/demoes/demo36/products/product-6.jpg",
+        "category": "Sports",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 6,
+        "name": "Soft Hat",
+        "image": "/assets/images/demoes/demo36/products/product-7.jpg",
+        "category": "Hats",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 7,
+        "name": "PT Bag",
+        "image": "/assets/images/demoes/demo36/products/product-8.jpg",
+        "category": "Bags",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 8,
+        "name": "GM Camaro SS Original",
+        "image": "/assets/images/demoes/demo36/products/product-9.jpg",
+        "category": "Toys",
+        "rating": 100,
+        "oldPrice": "$29.00",
+        "newPrice": "$19.00",
+        "isHot": false,
+        "discount": null
+      },
+      {
+        "id": 9,
+        "name": "Kids Fashion T-Shirt",
+        "image": "/assets/images/demoes/demo36/products/product-10.jpg",
+        "category": "Kids Fashion",
+        "rating": 85,
+        "oldPrice": "$35.00",
+        "newPrice": "$25.00",
+        "isHot": false,
+        "discount": "-10%"
+      },
+      {
+        "id": 10,
+        "name": "Casual Shoes",
+        "image": "/assets/images/demoes/demo36/products/product-11.jpg",
+        "category": "Casual Shoes",
+        "rating": 95,
+        "oldPrice": "$49.00",
+        "newPrice": "$39.00",
+        "isHot": true,
+        "discount": "-15%"
+      },
+      {
+        "id": 11,
+        "name": "Spring Jacket",
+        "image": "/assets/images/demoes/demo36/products/product-12.jpg",
+        "category": "Spring & Autumn",
+        "rating": 90,
+        "oldPrice": "$59.00",
+        "newPrice": "$50.00",
+        "isHot": false,
+        "discount": "-20%"
+      },
+      {
+        "id": 12,
+        "name": "Men's Leather Shoes",
+        "image": "/assets/images/demoes/demo36/products/product-13.jpg",
+        "category": "Man",
+        "rating": 100,
+        "oldPrice": "$79.00",
+        "newPrice": "$59.00",
+        "isHot": true,
+        "discount": "-25%"
+      },
+      {
+        "id": 13,
+        "name": "Fashion Accessories Set",
+        "image": "/assets/images/demoes/demo36/products/product-14.jpg",
+        "category": "Accessories",
+        "rating": 80,
+        "oldPrice": "$15.00",
+        "newPrice": "$10.00",
+        "isHot": false,
+        "discount": "-5%"
+      }
+    ]
+  }
+  

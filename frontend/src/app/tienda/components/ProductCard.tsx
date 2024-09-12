@@ -23,7 +23,7 @@ const ProductCard = ({to}:{to:string}) => {
                                 <i className="icon-shopping-cart" />
                             </a>
                         </div>
-                        <Link href={"?show=true"} className="btn-quickview" title="Quick View">
+                        <Link href={"?show=true"} className="btn-quickview" title="Quick View" scroll={false}>
                             Quick View
                         </Link>
                        

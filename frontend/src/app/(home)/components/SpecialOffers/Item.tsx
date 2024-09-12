@@ -40,7 +40,7 @@ const Item = ({ product }: ItemProps) => {
           </Link>
         </div>
 
-        <Link href="?show=true" className="btn-quickview" title="Quick View">
+        <Link href="?show=true" className="btn-quickview" title="Quick View" scroll={false}>
           Quick View
         </Link>
       </figure>

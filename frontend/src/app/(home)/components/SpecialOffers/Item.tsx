@@ -20,7 +20,7 @@ const Item = ({ product }: ItemProps) => {
   return (
     <div className="product-default inner-quickview inner-icon">
       <figure>
-        <Link href="/demo36-product.html">
+        <Link href={`/producto/${product.name}`}>
           <img
             src={product.image}
             width={239}
@@ -40,7 +40,7 @@ const Item = ({ product }: ItemProps) => {
           </Link>
         </div>
 
-        <Link href="ajax/product-quick-view.html" className="btn-quickview" title="Quick View">
+        <Link href="?show=true" className="btn-quickview" title="Quick View">
           Quick View
         </Link>
       </figure>

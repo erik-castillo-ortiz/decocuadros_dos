@@ -23,13 +23,10 @@ const ProductCard = ({to}:{to:string}) => {
                                 <i className="icon-shopping-cart" />
                             </a>
                         </div>
-                        <a
-                            href="ajax/product-quick-view.html"
-                            className="btn-quickview"
-                            title="Quick View"
-                        >
+                        <Link href={"?show=true"} className="btn-quickview" title="Quick View">
                             Quick View
-                        </a>
+                        </Link>
+                       
                     </figure>
                     <div className="product-details">
                         <div className="category-wrap">

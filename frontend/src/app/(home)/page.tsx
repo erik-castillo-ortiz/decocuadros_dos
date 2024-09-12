@@ -1,3 +1,4 @@
+import Modal from "@/components/Modal/Modal";
 import BannerSection from "./components/BannerSection";
 import CategoriesSlider from "./components/CategoriesSlider";
 import CategoryFilter from "./components/CategoryFilter";
@@ -5,14 +6,18 @@ import DealProductSection from "./components/DealProductSection";
 import InfoBoxesSlider from "./components/InfoBoxesSlider";
 import PromoSection from "./components/PromoSection";
 import SliderComponent from "./components/SliderComponent";
+import { SearchParamProps } from "@/interfaces/modal";
 
 // import productData from '@/app/helpers/products.json';
 
-
-export default function Home() {
+export default function Home({ searchParams }: SearchParamProps) {
   
+  const show = searchParams?.show;
+
   return (
     <>
+      {show && <Modal />}
+
         <div className="bg-gray pb-5">
           <div className="container pb-3">
             <SliderComponent />
@@ -3598,6 +3603,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
     </>
   );
 }

@@ -1,8 +1,16 @@
+import { SearchParamProps } from "@/interfaces/modal";
 import ProductCard from "./components/ProductCard"
+import Modal from "@/components/Modal/Modal";
 
-const Tienda = () => {
+
+const Tienda = ({ searchParams }: SearchParamProps) => {
+  
+  const show = searchParams?.show;
+  
   return (
     <>
+    {show && <Modal />}
+
       <nav aria-label="breadcrumb" className="breadcrumb-nav mb-3">
         <div className="container">
           <ol className="breadcrumb">

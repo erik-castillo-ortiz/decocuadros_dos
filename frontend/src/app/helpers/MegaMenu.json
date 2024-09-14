@@ -1,0 +1,166 @@
+{
+  "menuItems": [
+    {
+      "title": "Fashion",
+      "iconClass": "icon-category-fashion",
+      "megamenuClass": "megamenu-one",
+      "categories": [
+        {
+          "title": "WOMAN",
+          "links": [
+            { "name": "Top & Blouses", "url": "demo36-shop.html" },
+            { "name": "Accessories", "url": "demo36-shop.html" },
+            { "name": "Dresses & Skirts", "url": "demo36-shop.html" },
+            { "name": "Shoes & Boots", "url": "demo36-shop.html" }
+          ]
+        },
+        {
+          "title": "JEWELLERY",
+          "links": [
+            { "name": "Sweaters", "url": "demo36-shop.html" },
+            { "name": "Heels & Sandals", "url": "demo36-shop.html" },
+            { "name": "Jeans & Shorts", "url": "demo36-shop.html" }
+          ]
+        },
+        {
+          "title": "MAN",
+          "links": [
+            { "name": "Accessories", "url": "demo36-shop.html" },
+            { "name": "Watch Fashion", "url": "demo36-shop.html" },
+            { "name": "Tees, Knits & Polos", "url": "demo36-shop.html" },
+            { "name": "KOKA", "url": "demo36-shop.html" }
+          ]
+        },
+        {
+          "title": "KIDS FASHION",
+          "links": [
+            { "name": "Casual Shoes", "url": "demo36-shop.html" },
+            { "name": "Spring & Autumn", "url": "demo36-shop.html" },
+            { "name": "Winter Sneakers", "url": "demo36-shop.html" }
+          ]
+        }
+      ],
+      "banner": {
+        "imgSrc": "assets/images/demoes/demo40/menu-banner-1.jpg",
+        "content": {
+          "titlePrefix": "UP TO",
+          "mainTitle": "50%",
+          "subTitle": "OFF"
+        }
+      },
+      "partners": [
+        {
+          "imgSrc": "assets/images/brands/small/brand1.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand2.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand3.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand4.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand5.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        }
+      ]
+    },
+    {
+      "title": "Fashion test",
+      "iconClass": "icon-category-electronics",
+      "megamenuClass": "megamenu-one",
+      "categories": [
+        {
+          "title": "WOMAN test",
+          "links": [
+            { "name": "Top & Blouses test", "url": "demo36-shop.html" },
+            { "name": "Accessories test", "url": "demo36-shop.html" },
+            { "name": "Dresses & Skirts test", "url": "demo36-shop.html" },
+            { "name": "Shoes & Boots test", "url": "demo36-shop.html" }
+          ]
+        },
+        {
+          "title": "JEWELLERY test",
+          "links": [
+            { "name": "Sweaters", "url": "demo36-shop.html" },
+            { "name": "Heels & Sandals", "url": "demo36-shop.html" },
+            { "name": "Jeans & Shorts", "url": "demo36-shop.html" }
+          ]
+        },
+        {
+          "title": "MAN",
+          "links": [
+            { "name": "Accessories", "url": "demo36-shop.html" },
+            { "name": "Watch Fashion", "url": "demo36-shop.html" },
+            { "name": "Tees, Knits & Polos", "url": "demo36-shop.html" },
+            { "name": "KOKA", "url": "demo36-shop.html" }
+          ]
+        },
+        {
+          "title": "KIDS FASHION",
+          "links": [
+            { "name": "Casual Shoes", "url": "demo36-shop.html" },
+            { "name": "Spring & Autumn", "url": "demo36-shop.html" },
+            { "name": "Winter Sneakers", "url": "demo36-shop.html" }
+          ]
+        }
+      ],
+      "banner": {
+        "imgSrc": "assets/images/demoes/demo40/menu-banner-1.jpg",
+        "content": {
+          "titlePrefix": "UP TO",
+          "mainTitle": "50%",
+          "subTitle": "OFF"
+        }
+      },
+      "partners": [
+        {
+          "imgSrc": "assets/images/brands/small/brand1.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand2.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand3.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand4.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        },
+        {
+          "imgSrc": "assets/images/brands/small/brand5.png",
+          "alt": "logo image",
+          "width": 140,
+          "height": 60
+        }
+      ]
+    }
+  ]
+}

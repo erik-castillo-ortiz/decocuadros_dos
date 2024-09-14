@@ -23,6 +23,7 @@ const CategoryFilter = () => {
     : products;
 
   return (
+    <>
     <div className="category-filter-section bg-gray appear-animate animated fadeInUpShorter appear-animation-visible" data-animation-name="fadeInUpShorter" data-animation-delay="200" style={{ animationDuration: '1000ms' }}>
       <div className="container">
         <div className="row">
@@ -46,7 +47,7 @@ const CategoryFilter = () => {
           <div className="col-lg-6 tab-content mt-2 mt-lg-0 order-2 order-sm-0">
             <div className="tab-pane fade h-100 active show" id="filter-1" role="tabpanel" aria-labelledby="filter-1-tab">
               <div className="product-content products-with-divide">
-                <div className="row row-joined">
+                <div className="row row-joined h-100">
                   {filteredProducts.slice(0, 6).map((product) => (
                     <div key={product.id} className="col-sm-4 col-6">
                       <Item product={product} />
@@ -59,6 +60,7 @@ const CategoryFilter = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

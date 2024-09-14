@@ -13,6 +13,7 @@ export default function Home() {
   
   return (
     <>
+
         <div className="bg-gray pb-5">
           <div className="container pb-3">
             <SliderComponent />

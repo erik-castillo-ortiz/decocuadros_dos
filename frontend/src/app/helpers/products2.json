@@ -22,7 +22,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": true,
-      "discount": "-20%"
+      "discount": "-20%",
+      "shortDescription": "High-quality speaker with immersive sound.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 2,
@@ -34,7 +37,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 3,
@@ -46,7 +52,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 4,
@@ -58,7 +67,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 5,
@@ -70,7 +82,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 6,
@@ -82,7 +97,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 7,
@@ -94,7 +112,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 8,
@@ -106,7 +127,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 9,
@@ -118,7 +142,10 @@
       "oldPrice": "$59.00",
       "newPrice": "$49.00",
       "isHot": true,
-      "discount": "-30%"
+      "discount": "-30%",
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 10,
@@ -130,7 +157,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": true,
-      "discount": "-20%"
+      "discount": "-20%",
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 11,
@@ -142,7 +172,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 12,
@@ -154,7 +187,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     },
     {
       "id": 13,
@@ -166,7 +202,10 @@
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": false,
-      "discount": null
+      "discount": null,
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"]
     }
   ]
 }

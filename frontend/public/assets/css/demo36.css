@@ -6882,12 +6882,22 @@ figure .porto-loading-icon {
     border-right: none;
   }
 
-  .product-quick-view .product-single-details {
+  /* .product-quick-view .product-single-details {
     position: absolute;
-    right: 0;
+     right: 0; 
     height: 100% !important;
     overflow-y: auto;
+    max-width: 100%; 
+    overflow-wrap: break-word; 
+  } */
+  .product-quick-view .product-single-details {
+    position: relative;
+    height: 100% !important;
+    overflow-y: auto;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
+
   .product-quick-view .product-single-details::-webkit-scrollbar {
     height: 10px;
     width: 3px;
@@ -11821,7 +11831,7 @@ span.toggle::before {
 .product-single-details .short-divider {
   width: 40px;
   height: 0;
-  border-top: 2px solid #e7e7e7;
+  border-top: 2px solid #a9a2a2;
   margin: 0 0 2.2rem;
   text-align: left;
 }
@@ -11874,6 +11884,7 @@ span.toggle::before {
   font-size: 1.6rem;
   letter-spacing: -0.015em;
   line-height: 1.6875;
+  text-align: justify;
 }
 .product-single-details .product-desc a {
   color: #222529;
@@ -15366,7 +15377,7 @@ body {
 }
 
 hr {
-  border-top-color: #dfddda;
+  border-top-color: #a19e9e;
 }
 
 .bg-image {
@@ -15381,7 +15392,7 @@ hr {
   left: 100%;
   top: 50%;
   margin-top: -0.5em;
-  animation: slideX 120s infinite linear;
+  animation: slideX 40s infinite linear;
   pointer-events: none;
   z-index: -1;
 }
@@ -16846,4 +16857,8 @@ span.toggle {
 /* Cuando el header está en su lugar final, top: 0 */
 .custom-transition.fixed {
   top: 0px !important;
+}
+
+.quick-view-modal .modal-dialog {
+  max-width: 931px;
 }

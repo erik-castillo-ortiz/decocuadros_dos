@@ -9,7 +9,19 @@
     "rating": 80,
     "oldPrice": "$59.00",
     "newPrice": "$49.00",
-    "offerEnds": "2024-09-10 23:59:59"
+    "isHot": false,
+    "discount": null,
+    "shortDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.",
+    "SKU": "123456789",
+    "sizes": ["XL", "L", "M", "S"],
+    "offerEnds": "2024-09-10 23:59:59",
+    "gallery": [
+      "/assets/images/demoes/demo36/products/product-1.jpg",
+      "/assets/images/demoes/demo36/products/product-1.jpg",
+      "/assets/images/demoes/demo36/products/product-1.jpg",
+      "/assets/images/demoes/demo36/products/product-1.jpg"
+    ],
+    "stock": 5
   },
   "products": [
     {
@@ -18,14 +30,24 @@
       "image": "/assets/images/demoes/demo36/products/product-2.jpg",
       "category": "Speakers",
       "categoryId": 2,
-      "rating": 100,
+      "rating": 60,
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "shortDescription": "High-quality speaker with immersive sound.",
+      "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:00:00"
     },
     {
       "id": 2,
@@ -40,7 +62,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-3.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 3,
@@ -51,11 +83,21 @@
       "rating": 90,
       "oldPrice": "$29.00",
       "newPrice": "$19.00",
-      "isHot": false,
-      "discount": null,
+      "isHot": true,
+      "discount": "-20%",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:05"
     },
     {
       "id": 4,
@@ -70,7 +112,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 5,
@@ -85,7 +137,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-6.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 6,
@@ -100,7 +162,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-7.jpg",
+        "/assets/images/demoes/demo36/products/product-7.jpg",
+        "/assets/images/demoes/demo36/products/product-7.jpg",
+        "/assets/images/demoes/demo36/products/product-7.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 7,
@@ -115,7 +187,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-8.jpg",
+        "/assets/images/demoes/demo36/products/product-8.jpg",
+        "/assets/images/demoes/demo36/products/product-8.jpg",
+        "/assets/images/demoes/demo36/products/product-8.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 8,
@@ -130,7 +212,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-9.jpg",
+        "/assets/images/demoes/demo36/products/product-9.jpg",
+        "/assets/images/demoes/demo36/products/product-9.jpg",
+        "/assets/images/demoes/demo36/products/product-9.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 9,
@@ -145,7 +237,17 @@
       "discount": "-30%",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-1.jpg",
+        "/assets/images/demoes/demo36/products/product-1.jpg",
+        "/assets/images/demoes/demo36/products/product-1.jpg",
+        "/assets/images/demoes/demo36/products/product-1.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 10,
@@ -160,7 +262,17 @@
       "discount": "-20%",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-2.jpg",
+        "/assets/images/demoes/demo36/products/product-2.jpg",
+        "/assets/images/demoes/demo36/products/product-2.jpg",
+        "/assets/images/demoes/demo36/products/product-2.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 11,
@@ -175,7 +287,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-7.jpg",
+        "/assets/images/demoes/demo36/products/product-7.jpg",
+        "/assets/images/demoes/demo36/products/product-7.jpg",
+        "/assets/images/demoes/demo36/products/product-7.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 12,
@@ -190,7 +312,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-6.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     },
     {
       "id": 13,
@@ -205,7 +337,17 @@
       "discount": null,
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
-      "sizes": ["XL", "L", "M", "S"]
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-9.jpg",
+        "/assets/images/demoes/demo36/products/product-9.jpg",
+        "/assets/images/demoes/demo36/products/product-9.jpg",
+        "/assets/images/demoes/demo36/products/product-9.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": false,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02"
     }
   ]
 }

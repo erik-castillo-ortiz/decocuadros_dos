@@ -1,11 +1,5 @@
-// 'use client';
-
 import Link from 'next/link';
-
-interface CategoryMenuProps {
-  categories: { id: number; name: string }[];
-  onCategorySelect: (categoryId: number) => void;
-}
+import { CategoryMenuProps } from '@/app/(home)/components/types';
 
 const CategoryMenu = ({ categories, onCategorySelect }: CategoryMenuProps) => {
   return (
@@ -15,9 +9,9 @@ const CategoryMenu = ({ categories, onCategorySelect }: CategoryMenuProps) => {
         {categories.map((category) => (
           <li
             key={category.id}
-            className="nav-item cursor-pointer" 
-            onClick={() => onCategorySelect(category.id)} 
-            style={{ cursor: 'pointer' }} 
+            className="nav-item cursor-pointer"
+            onClick={() => onCategorySelect(category.id)}
+            style={{ cursor: 'pointer' }}
           >
             <a className="nav-link">{category.name}</a>
           </li>

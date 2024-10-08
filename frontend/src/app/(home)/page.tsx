@@ -1,35 +1,28 @@
-import BannerSection from "./components/BannerSection";
-import CategoriesSlider from "./components/CategoriesSlider";
-import CategoryFilter from "./components/CategoryFilter";
-import DealProductSection from "./components/DealProductSection";
-import InfoBoxesSlider from "./components/InfoBoxesSlider";
-import PromoSection from "./components/PromoSection";
-import SliderComponent from "./components/SliderComponent";
-
-// import productData from '@/app/helpers/products.json';
-
+import BannerSection from './components/BannerSection';
+import CategoriesSlider from './components/CategoriesSlider';
+import CategoryFilter from './components/CategoryFilter';
+import DealProductSection from './components/DealProductSection';
+import InfoBoxesSlider from './components/InfoBoxesSlider';
+import PromoSection from './components/PromoSection';
+import SliderComponent from './components/SliderComponent';
 
 export default function Home() {
-  
   return (
     <>
-
-        <div className="bg-gray pb-5">
-          <div className="container pb-3">
-            <SliderComponent />
-            <CategoriesSlider />
-            <PromoSection
-              headingText="DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD OUR APP"
-              subText="EXCLUSIVE SALES, GET IT NOW!"
-              promoText="DOWNLOAD OUR APP"
-              buttonText="Get NOW!"
-              buttonLink="/tienda" 
-            />
-
-          </div>
+      <div className="bg-gray pb-5">
+        <div className="container pb-3">
+          <SliderComponent />
+          <CategoriesSlider />
+          <PromoSection
+            headingText="DOWNLOAD OUR APP DOWNLOAD OUR APP DOWNLOAD OUR APP"
+            subText="EXCLUSIVE SALES, GET IT NOW!"
+            promoText="DOWNLOAD OUR APP"
+            buttonText="Get NOW!"
+            buttonLink="/tienda"
+          />
         </div>
+      </div>
       <div className="container">
-
         <InfoBoxesSlider />
         <BannerSection />
         <DealProductSection />
@@ -49,7 +42,7 @@ export default function Home() {
                   className="banner banner4 bg-image"
                   style={{
                     backgroundImage:
-                      "url(/assets/images/demoes/demo36/banners/banner4.jpg)",
+                      'url(/assets/images/demoes/demo36/banners/banner4.jpg)',
                   }}
                 >
                   <div className="banner-layer d-flex align-items-center flex-column flex-sm-row justify-content-end">
@@ -78,7 +71,7 @@ export default function Home() {
                   className="banner banner5 bg-image"
                   style={{
                     backgroundImage:
-                      "url(/assets/images/demoes/demo36/banners/banner5.jpg)",
+                      'url(/assets/images/demoes/demo36/banners/banner5.jpg)',
                   }}
                 >
                   <div className="banner-layer d-flex align-items-center flex-column flex-sm-row justify-content-end">
@@ -292,7 +285,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -353,7 +346,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -426,7 +419,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -487,7 +480,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -548,7 +541,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -609,7 +602,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -790,7 +783,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -851,7 +844,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -912,7 +905,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -973,7 +966,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -1034,7 +1027,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -1095,7 +1088,7 @@ export default function Home() {
                 </h3>
                 <div className="ratings-container">
                   <div className="product-ratings">
-                    <span className="ratings" style={{ width: "100%" }} />
+                    <span className="ratings" style={{ width: '100%' }} />
                     {/* End .ratings */}
                     <span className="tooltiptext tooltip-top" />
                   </div>
@@ -1117,7 +1110,7 @@ export default function Home() {
             data-animation-delay={100}
             style={{
               backgroundImage:
-                "url(/assets/images/demoes/demo36/banners/banner6.jpg)",
+                'url(/assets/images/demoes/demo36/banners/banner6.jpg)',
             }}
           >
             <div className="container banner-content">
@@ -1337,7 +1330,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1400,7 +1393,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1463,7 +1456,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1526,7 +1519,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1622,7 +1615,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1685,7 +1678,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1748,7 +1741,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1844,7 +1837,7 @@ export default function Home() {
                               <div className="product-ratings">
                                 <span
                                   className="ratings"
-                                  style={{ width: "100%" }}
+                                  style={{ width: '100%' }}
                                 />
                                 {/* End .ratings */}
                                 <span className="tooltiptext tooltip-top" />
@@ -1899,14 +1892,14 @@ export default function Home() {
                         </figure>
                         <div className="product-details">
                           <h3 className="product-title">
-                            {" "}
-                            <a href="demo36-product.html">PT Speaker</a>{" "}
+                            {' '}
+                            <a href="demo36-product.html">PT Speaker</a>{' '}
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
                               <span
                                 className="ratings"
-                                style={{ width: "100%" }}
+                                style={{ width: '100%' }}
                               />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
@@ -1936,16 +1929,16 @@ export default function Home() {
                         </figure>
                         <div className="product-details">
                           <h3 className="product-title">
-                            {" "}
+                            {' '}
                             <a href="demo36-product.html">
                               Beats Solo HD Drenched
-                            </a>{" "}
+                            </a>{' '}
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
                               <span
                                 className="ratings"
-                                style={{ width: "100%" }}
+                                style={{ width: '100%' }}
                               />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top">
@@ -1977,16 +1970,16 @@ export default function Home() {
                         </figure>
                         <div className="product-details">
                           <h3 className="product-title">
-                            {" "}
+                            {' '}
                             <a href="demo36-product.html">
                               Palm Print Jacket
-                            </a>{" "}
+                            </a>{' '}
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
                               <span
                                 className="ratings"
-                                style={{ width: "100%" }}
+                                style={{ width: '100%' }}
                               />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
@@ -2016,14 +2009,14 @@ export default function Home() {
                         </figure>
                         <div className="product-details">
                           <h3 className="product-title">
-                            {" "}
+                            {' '}
                             <a href="demo36-product.html">Camera</a>
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
                               <span
                                 className="ratings"
-                                style={{ width: "100%" }}
+                                style={{ width: '100%' }}
                               />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top">
@@ -2055,14 +2048,14 @@ export default function Home() {
                         </figure>
                         <div className="product-details">
                           <h3 className="product-title">
-                            {" "}
-                            <a href="demo36-product.html">Red Football</a>{" "}
+                            {' '}
+                            <a href="demo36-product.html">Red Football</a>{' '}
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
                               <span
                                 className="ratings"
-                                style={{ width: "100%" }}
+                                style={{ width: '100%' }}
                               />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top" />
@@ -2092,14 +2085,14 @@ export default function Home() {
                         </figure>
                         <div className="product-details">
                           <h3 className="product-title">
-                            {" "}
-                            <a href="demo36-product.html">Soft Hat</a>{" "}
+                            {' '}
+                            <a href="demo36-product.html">Soft Hat</a>{' '}
                           </h3>
                           <div className="ratings-container">
                             <div className="product-ratings">
                               <span
                                 className="ratings"
-                                style={{ width: "100%" }}
+                                style={{ width: '100%' }}
                               />
                               {/* End .ratings */}
                               <span className="tooltiptext tooltip-top">
@@ -2342,7 +2335,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2402,7 +2395,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2462,7 +2455,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2522,7 +2515,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2582,7 +2575,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2642,7 +2635,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2702,7 +2695,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2798,7 +2791,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2858,7 +2851,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2918,7 +2911,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -2978,7 +2971,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -3074,7 +3067,7 @@ export default function Home() {
                       </h3>
                       <div className="ratings-container">
                         <div className="product-ratings">
-                          <span className="ratings" style={{ width: "100%" }} />
+                          <span className="ratings" style={{ width: '100%' }} />
                           {/* End .ratings */}
                           <span className="tooltiptext tooltip-top" />
                         </div>
@@ -3207,7 +3200,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>
@@ -3269,7 +3262,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>
@@ -3331,7 +3324,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>
@@ -3393,7 +3386,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>
@@ -3455,7 +3448,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>
@@ -3517,7 +3510,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>
@@ -3579,7 +3572,7 @@ export default function Home() {
                   </h3>
                   <div className="ratings-container">
                     <div className="product-ratings">
-                      <span className="ratings" style={{ width: "100%" }} />
+                      <span className="ratings" style={{ width: '100%' }} />
                       {/* End .ratings */}
                       <span className="tooltiptext tooltip-top" />
                     </div>

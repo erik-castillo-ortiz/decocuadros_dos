@@ -2,21 +2,14 @@
 
 import Link from 'next/link';
 import React from 'react';
-
-interface PromoSectionProps {
-  headingText: string;
-  subText: string;
-  promoText: string;
-  buttonText: string;
-  buttonLink: string;
-}
+import { PromoSectionProps } from '@/app/(home)/components/types';
 
 const PromoSection: React.FC<PromoSectionProps> = ({
   headingText,
   subText,
   promoText,
   buttonText,
-  buttonLink
+  buttonLink,
 }) => {
   return (
     <div className="promo-section bg-white">

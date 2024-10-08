@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import infoBoxes from '@/app/helpers/infoBoxes.json'; // Importar el JSON con los datos
+import infoBoxes from '@/app/helpers/infoBoxes.json';
 
 const InfoBoxesSlider = () => {
   return (
@@ -15,7 +15,7 @@ const InfoBoxesSlider = () => {
       breakpoints={{
         576: { slidesPerView: 2 },
         992: { slidesPerView: 3 },
-        1400: { slidesPerView: 4 }
+        1400: { slidesPerView: 4 },
       }}
       spaceBetween={30}
       className="info-boxes-slider"

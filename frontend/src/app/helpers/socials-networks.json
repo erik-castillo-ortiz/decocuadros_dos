@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "social-icon social-facebook icon-facebook",
+    "title": "Facebook",
+    "link": "#"
+  },
+  {
+    "icon": "social-icon social-twitter icon-twitter",
+    "title": "Twitter",
+    "link": "#"
+  },
+  {
+    "icon": "social-icon social-linkedin fab fa-linkedin-in",
+    "title": "LinkedIn",
+    "link": "#"
+  },
+  {
+    "icon": "social-icon social-mail icon-mail-alt",
+    "title": "Mail",
+    "link": "#"
+  }
+]

@@ -5,8 +5,10 @@ import HeaderMenuMobile from './components/HeaderMenuMobile';
 import HeaderMegaMenu from './components/HeaderMegaMenu';
 import menuData from '@/app/helpers/MegaMenu.json';
 import Link from 'next/link'; //v3 final
+import MobileMenu from './MobileMenu';
 
-const Header = () => {
+const Header: React.FC = () => {
+  const [menuActive, setMenuActive] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [stickyStyle, setStickyStyle] = useState<{ top: string }>({
     top: '-100px',
@@ -48,12 +50,26 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); // El [] asegura que solo se ejecute una vez al cargar la página
+  useEffect(() => {
+    // Agregar o quitar la clase "mmenu-active" al body dependiendo del estado del menú
+    if (menuActive) {
+      document.body.classList.add('mmenu-active');
+    } else {
+      document.body.classList.remove('mmenu-active');
+    }
 
+    // Cleanup para asegurarnos que la clase se remueva cuando el componente se desmonte
+    return () => {
+      document.body.classList.remove('mmenu-active');
+    };
+  }, [menuActive]); // El efecto se ejecuta cada vez que menuActive cambia
   return (
     <>
+      <MobileMenu menuActive={menuActive} setMenuActive={setMenuActive} />
       <header className="header">
         <HeaderTop />
-        <HeaderMenuMobile />
+        {/* <HeaderMenuMobile /> */}
+        <HeaderMenuMobile setMenuActive={setMenuActive} />
 
         <div
           className={`sticky-wrapper ${isSticky ? 'min-height: 81.5px;' : ''}`}
@@ -354,18 +370,18 @@ const Header = () => {
                       Buy Porto
                     </a>
                   </li>
-                  <li className="float-right phone">
+                  <li className="float-right float-end phone">
                     <a href="#" className="d-flex align-items-center">
                       <i className="icon-phone-1" />
                       1-800-234-5678
                     </a>
                   </li>
-                  <li className="float-right">
+                  <li className="float-right float-end">
                     <a href="https://1.envato.market/DdLk5" target="_blank">
                       NEW ARRIVALS
                     </a>
                   </li>
-                  <li className="float-right">
+                  <li className="float-right float-end">
                     <a href="#">FLASH DEALS</a>
                   </li>
                 </ul>

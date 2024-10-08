@@ -1,17 +1,12 @@
-// 'use client';
-
 import FeaturedProduct from './SpecialOffers/FeaturedProduct';
-import Item from './SpecialOffers/Item';
-import productData from '@/app/helpers/products2.json'; 
+import DealInnerProductsSection from './DealInnerProductsSection';
 
 const DealProductSection = () => {
-  const { sectionTitle, featuredProduct, products } = productData; // Obtener datos desde el JSON
-
   return (
     <div className="deal-products-section">
       <h2 className="section-title d-flex align-items-center text-transform-none">
         <i className="icon-percent-shape" />
-        {sectionTitle}
+        Special Offers
       </h2>
       <div
         className="row appear-animate animated fadeInUpShorter appear-animation-visible"
@@ -21,20 +16,12 @@ const DealProductSection = () => {
       >
         {/* Producto destacado */}
         <div className="col-md-4 mb-2 mb-md-0">
-          <FeaturedProduct product={featuredProduct} />
+          <FeaturedProduct />
         </div>
 
         {/* Lista de productos */}
         <div className="col-md-8">
-          <div className="products-with-divide">
-            <div className="row row-joined">
-              {products.slice(0, 8).map((product) => (
-                <div key={product.id} className="col-xl-3 col-sm-4 col-6">
-                  <Item product={product} />
-                </div>
-              ))}
-            </div>
-          </div>
+          <DealInnerProductsSection />
         </div>
       </div>
     </div>

@@ -40,6 +40,7 @@ const QuickViewProduct: React.FC<QuickViewProductProps> = ({
       document.documentElement.classList.add('modal-open');
       document.documentElement.style.overflow = 'hidden';
       document.documentElement.style.marginRight = '15px';
+      setQuantity(1);
     } else {
       document.documentElement.classList.remove('modal-open');
       document.documentElement.style.overflow = '';
@@ -73,10 +74,16 @@ const QuickViewProduct: React.FC<QuickViewProductProps> = ({
     setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
     setShowTooltip(false);
   };
+
+  const handleClose = () => {
+    setQuantity(1); // Restablecer cantidad al valor inicial al cerrar el modal
+    setShowTooltip(false); // Ocultar el tooltip al cerrar el modal
+    closeModal(); // Llamar la función pasada desde el padre para cerrar
+  };
   return (
     <Modal
       show={isOpen}
-      onHide={closeModal}
+      onHide={handleClose}
       size="lg"
       centered
       className="quick-view-modal"

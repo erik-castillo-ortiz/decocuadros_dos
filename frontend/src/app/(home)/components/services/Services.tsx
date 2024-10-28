@@ -106,3 +106,13 @@ export const fetchBestRatings = async (
 
   return products;
 };
+// Servicio para obtener productos en oferta (isHot = true)
+export const fetchOfferProducts = async (
+  limit: number = 6
+): Promise<Product[]> => {
+  const products = productData.products
+    .filter((product: Product) => product.isHot === true)
+    .slice(0, limit);
+
+  return products;
+};

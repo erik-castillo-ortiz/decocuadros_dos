@@ -1,10 +1,6 @@
+import { Product } from '@/app/(home)/components/types';
 interface ItemWidgetProps {
-  product: {
-    id: number;
-    title: string;
-    price: string;
-    image: string;
-  };
+  product: Product;
 }
 
 const ItemWidget = ({ product }: ItemWidgetProps) => {
@@ -12,12 +8,12 @@ const ItemWidget = ({ product }: ItemWidgetProps) => {
     <div className="product-default left-details product-widget">
       <figure>
         <a href="demo36-product.html">
-          <img src={product.image} width="84" height="84" alt={product.title} />
+          <img src={product.image} width="84" height="84" alt={product.name} />
         </a>
       </figure>
       <div className="product-details">
         <h3 className="product-title">
-          <a href="demo36-product.html">{product.title}</a>
+          <a href="demo36-product.html">{product.name}</a>
         </h3>
         <div className="ratings-container">
           <div className="product-ratings">
@@ -26,7 +22,7 @@ const ItemWidget = ({ product }: ItemWidgetProps) => {
           </div>
         </div>
         <div className="price-box">
-          <span className="product-price">{product.price}</span>
+          <span className="product-price">{product.oldPrice}</span>
         </div>
       </div>
     </div>

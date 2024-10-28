@@ -9072,7 +9072,6 @@ header .separator {
   transform: none;
 }
 
-
 .cart-product-info {
   color: #696969;
 }
@@ -15036,6 +15035,7 @@ aside .widget-info i {
 
 body {
   font-family: var(--font-poppins), sans-serif;
+  /* font-family: Poppins, sans-serif; */
 }
 
 .product-default {

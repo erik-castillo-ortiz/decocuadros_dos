@@ -292,7 +292,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ setMenuActive }) => {
             <input
               type="text"
               className="form-control mb-0"
-              placeholder="Search..."
+              placeholder="Search_2..."
               required
             />
             <button

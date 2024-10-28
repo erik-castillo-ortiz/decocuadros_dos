@@ -66,6 +66,7 @@ import Header from '@/layouts/Header';
 import Footer from '@/layouts/Footer';
 
 import { Poppins, Open_Sans, Oswald } from 'next/font/google';
+import ScrollTop from './(home)/components/ScrollTop';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -124,9 +125,10 @@ export default function RootLayout({
         {/* Mobile Menu gestionado en los Client Components */}
         {/* <MobileMenu /> */}
 
-        <a id="scroll-top" href="#top" title="Top" role="button">
+        {/* <a id="scroll-top" href="#top" title="Top" role="button">
           <i className="icon-angle-up" />
-        </a>
+        </a> */}
+        <ScrollTop />
       </body>
     </html>
   );

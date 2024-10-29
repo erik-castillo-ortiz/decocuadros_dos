@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface MobileMenuProps {
   menuActive: boolean;
@@ -6,10 +6,21 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ setMenuActive }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
   const closeMenu = () => {
     setMenuActive(false);
   };
 
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Ejecutar inicialmente para configurar el estado
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <>
       <div className="mobile-menu-overlay" onClick={closeMenu} />
@@ -321,7 +332,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ setMenuActive }) => {
         {/* End .mobile-menu-wrapper */}
       </div>
       {/* End .mobile-menu-container */}
-      <div className="sticky-navbar">
+      {/* <div className="sticky-navbar"> */}
+      <div className={`sticky-navbar ${isMobile ? 'fixed' : ''}`}>
         <div className="sticky-info">
           <a href="/">
             <i className="icon-home" />

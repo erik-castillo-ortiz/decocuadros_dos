@@ -1,0 +1,148 @@
+{
+  "newsletter": {
+    "title": "Subscribe To Our Newsletter",
+    "content": "Get all the latest information on Events, Sales and Offers.",
+    "buttonText": "Subscribe Now!"
+  },
+  "links": [
+    {
+      "title": "Customer Service",
+      "items": [
+        "Help & FAQs",
+        "Order Tracking",
+        "Shipping & Delivery",
+        "Orders History",
+        "Advanced Search",
+        "Login"
+      ],
+      "urls": ["#", "#", "#", "#", "#", "login.html"]
+    },
+    {
+      "title": "About Us",
+      "items": ["About Us", "Careers", "Our Stores", "Corporate Sales"],
+      "urls": ["about.html", "#", "#", "#"]
+    },
+    {
+      "title": "More Information",
+      "items": [
+        "Affiliates",
+        "Refer a Friend",
+        "Student Beans Offers",
+        "Gift Vouchers"
+      ],
+      "urls": ["#", "#", "#", "#"]
+    },
+    {
+      "title": "Social Media",
+      "items": ["Facebook", "Twitter", "Instagram"],
+      "urls": ["#", "#", "#"],
+      "icons": ["icon-facebook", "icon-twitter", "icon-instagram"]
+    }
+  ],
+  "categories": [
+    {
+      "title": "Fashion:",
+      "items": [
+        "Tops & Blouses",
+        "Accessories",
+        "Dresses & Skirts",
+        "Shoes & Boots",
+        "View All"
+      ],
+      "urls": [
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html"
+      ]
+    },
+    {
+      "title": "Electronics:",
+      "items": [
+        "Cables & Adapters",
+        "Electronic Cigarettes",
+        "Batteries",
+        "Chargers",
+        "Home Electronic",
+        "Bags & Cases",
+        "View All"
+      ],
+      "urls": [
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html"
+      ]
+    },
+    {
+      "title": "Gifts:",
+      "items": [
+        "Gifts for Boyfriend",
+        "Gifts for Husband",
+        "Gifts for Dad",
+        "Gifts for Grandpa",
+        "View All"
+      ],
+      "urls": [
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "demo36-shop.html",
+        "#",
+        "demo36-shop.html"
+      ]
+    },
+    {
+      "title": "Home & Garden:",
+      "items": [
+        "Sofas & Couches",
+        "Armchairs",
+        "Bed Frames",
+        "Bedside Tables",
+        "Dressing Tables",
+        "Chest of Drawers",
+        "View All"
+      ],
+      "urls": ["#", "#", "#", "#", "#", "#", "demo36-shop.html"]
+    },
+    {
+      "title": "Music:",
+      "items": [
+        "Guitar",
+        "Drums Sets",
+        "Percussions",
+        "Pedals & Effects",
+        "Sound Cards",
+        "Studio Equipments",
+        "Piano & Keyboards",
+        "View All"
+      ],
+      "urls": ["#", "#", "#", "#", "#", "#", "#", "#"]
+    },
+    {
+      "title": "Sports:",
+      "items": [
+        "Sports & Fitness",
+        "Boating & Sailing",
+        "Clothing",
+        "Exercise & Fitness",
+        "Golf",
+        "Hunting & Fishing",
+        "Leisure Sports",
+        "Running",
+        "View All"
+      ],
+      "urls": ["#", "#", "#", "#", "#", "#", "#", "#", "demo36-shop.html"]
+    }
+  ],
+  "paymentMethods": [
+    "payment-visa.svg",
+    "payment-paypal.svg",
+    "payment-stripe.png",
+    "payment-verisign.svg"
+  ],
+  "copyright": "Porto eCommerce. © 2021. All Rights Reserved"
+}

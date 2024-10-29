@@ -4,7 +4,7 @@ import HeaderTop from './components/HeaderTop';
 import HeaderMenuMobile from './components/HeaderMenuMobile';
 import HeaderMegaMenu from './components/HeaderMegaMenu';
 import menuData from '@/app/helpers/MegaMenu.json';
-import Link from 'next/link'; //v3 final
+import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 
 const Header: React.FC = () => {
@@ -13,8 +13,11 @@ const Header: React.FC = () => {
   const [stickyStyle, setStickyStyle] = useState<{ top: string }>({
     top: '-100px',
   });
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   const handleScroll = () => {
+    if (isMobile) return;
+
     const headerBottom = document.querySelector(
       '.header-bottom'
     ) as HTMLElement;
@@ -23,61 +26,68 @@ const Header: React.FC = () => {
     if (headerBottom && headerWrapper) {
       const sticky = headerWrapper.offsetTop + headerWrapper.offsetHeight;
 
-      if (window.pageYOffset > sticky && window.innerWidth >= 992) {
-        // Agregamos la clase y hacemos que suba de top -100px a top 0px
-        headerBottom.classList.add('custom-transition');
-        headerBottom.classList.add('fixed');
+      if (window.pageYOffset > sticky) {
+        headerBottom.classList.add('custom-transition', 'fixed');
         setIsSticky(true);
         setStickyStyle({ top: '0px' });
-      } else if (window.pageYOffset <= sticky && window.innerWidth >= 992) {
-        // Removemos la clase y hacemos que el menu vuelva a su posicion original de golpe
-        headerBottom.classList.remove('custom-transition');
-        headerBottom.classList.remove('fixed');
+      } else {
+        headerBottom.classList.remove('custom-transition', 'fixed');
         setIsSticky(false);
         setStickyStyle({ top: '-100px' });
       }
     }
   };
 
-  useEffect(() => {
-    // Verificar la posición del scroll al cargar la página
-    handleScroll();
+  const handleResize = () => {
+    const mobileView = window.innerWidth < 992;
+    setIsMobile(mobileView);
 
-    // Agregar el evento scroll
+    if (mobileView) {
+      const headerBottom = document.querySelector(
+        '.header-bottom'
+      ) as HTMLElement;
+      headerBottom.classList.remove('custom-transition', 'fixed');
+      setIsSticky(false);
+      setStickyStyle({ top: '-100px' });
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    handleResize();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []); // El [] asegura que solo se ejecute una vez al cargar la página
+  }, [isMobile]);
+
   useEffect(() => {
-    // Agregar o quitar la clase "mmenu-active" al body dependiendo del estado del menú
     if (menuActive) {
       document.body.classList.add('mmenu-active');
     } else {
       document.body.classList.remove('mmenu-active');
     }
-
-    // Cleanup para asegurarnos que la clase se remueva cuando el componente se desmonte
     return () => {
       document.body.classList.remove('mmenu-active');
     };
-  }, [menuActive]); // El efecto se ejecuta cada vez que menuActive cambia
+  }, [menuActive]);
+
   return (
     <>
       <MobileMenu menuActive={menuActive} setMenuActive={setMenuActive} />
       <header className="header">
         <HeaderTop />
-        {/* <HeaderMenuMobile /> */}
         <HeaderMenuMobile setMenuActive={setMenuActive} />
-
         <div
           className={`sticky-wrapper ${isSticky ? 'min-height: 81.5px;' : ''}`}
         >
           <div
             className="header-bottom sticky-header d-none d-lg-flex"
             data-sticky-options="{'mobile': false}"
-            style={stickyStyle} // Controla el top con transición
+            style={stickyStyle}
           >
             <div className="container">
               <nav className="main-nav w-100">

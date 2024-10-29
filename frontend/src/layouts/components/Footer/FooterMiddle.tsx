@@ -25,7 +25,15 @@ const FooterMiddle: React.FC<FooterMiddleProps> = ({
               {category.items.map((item, itemIndex) => (
                 <React.Fragment key={item}>
                   {itemIndex > 0 && ' | '}
-                  <a href={category.urls[itemIndex]}>{item}</a>
+                  <a
+                    href={category.urls[itemIndex]}
+                    className={item === 'View All' ? 'view-all' : ''}
+                  >
+                    {item}
+                    {item === 'View All' && (
+                      <i className="fas fa-long-arrow-alt-right ml-1"></i>
+                    )}
+                  </a>
                 </React.Fragment>
               ))}
             </li>

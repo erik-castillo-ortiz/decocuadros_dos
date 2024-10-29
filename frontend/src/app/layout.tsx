@@ -60,7 +60,7 @@ export default function RootLayout({
           <Header />
           <main className="main">
             {children}
-            <div className="mb-xl-4 mb-0" />
+            {/* <div className="mb-xl-4 mb-0" /> */}
             {/* margin */}
           </main>
           <Footer />

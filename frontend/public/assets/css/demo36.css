@@ -16902,3 +16902,15 @@ span.toggle {
   color: #fff;
   font-weight: 300;
 }
+
+.collapse-transition {
+  transition: height 0.7s ease, opacity 0.7s ease;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.collapse-transition.show {
+  opacity: 1;
+  height: auto;
+}

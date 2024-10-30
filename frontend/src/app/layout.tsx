@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 // import './globals.css';
 // import "/public/assets/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Breadcrumb from '@/app/components/BreadCrump';
 import '/public/assets/css/demo36.css';
 import '/public/assets/vendor/fontawesome-free/css/all.min.css';
 import TopNotice from '@/layouts/TopNotice';
@@ -59,6 +59,7 @@ export default function RootLayout({
           <TopNotice />
           <Header />
           <main className="main">
+            <Breadcrumb />
             {children}
             {/* <div className="mb-xl-4 mb-0" /> */}
             {/* margin */}

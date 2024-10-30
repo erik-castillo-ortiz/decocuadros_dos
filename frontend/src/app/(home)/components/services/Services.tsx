@@ -116,3 +116,123 @@ export const fetchOfferProducts = async (
 
   return products;
 };
+
+// const DEFAULT_PRODUCT_LIMIT = 12;
+
+// export const fetchFilteredProducts = async (
+//   limit = DEFAULT_PRODUCT_LIMIT,
+//   page = 1,
+//   sortOrder = 'menu_order'
+// ): Promise<{ products: Product[]; total: number }> => {
+//   let products = [...productData.products];
+
+//   // Aplicar orden de productos
+//   switch (sortOrder) {
+//     case 'popularity':
+//       products.sort((a, b) => b.rating - a.rating);
+//       break;
+//     case 'rating':
+//       products.sort((a, b) => b.rating - a.rating);
+//       break;
+//     case 'date':
+//       products.sort(
+//         (a, b) =>
+//           new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+//       );
+//       break;
+//     case 'price':
+//       products.sort(
+//         (a, b) =>
+//           parseFloat(a.newPrice.replace('$', '')) -
+//           parseFloat(b.newPrice.replace('$', ''))
+//       );
+//       break;
+//     case 'price-desc':
+//       products.sort(
+//         (a, b) =>
+//           parseFloat(b.newPrice.replace('$', '')) -
+//           parseFloat(a.newPrice.replace('$', ''))
+//       );
+//       break;
+//     default:
+//       products.sort(
+//         (a, b) =>
+//           new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+//       );
+//       break;
+//   }
+
+//   // Total de productos antes de la paginación
+//   const total = products.length;
+
+//   // Paginación
+//   const start = (page - 1) * limit;
+//   const end = start + limit;
+//   const paginatedProducts = products.slice(start, end);
+
+//   return { products: paginatedProducts, total };
+// };
+const DEFAULT_PRODUCT_LIMIT = 12;
+
+export const fetchFilteredProducts = async (
+  limit = DEFAULT_PRODUCT_LIMIT,
+  page = 1,
+  sortOrder = 'menu_order',
+  priceRange?: { min: number; max: number } // Agregado filtro de precio
+): Promise<{ products: Product[]; total: number }> => {
+  let products = [...productData.products];
+
+  // Filtrar por rango de precios si se proporciona
+  if (priceRange) {
+    products = products.filter((product) => {
+      const productPrice = parseFloat(product.newPrice.replace('$', ''));
+      return productPrice >= priceRange.min && productPrice <= priceRange.max;
+    });
+  }
+
+  // Aplicar orden de productos
+  switch (sortOrder) {
+    case 'popularity':
+      products.sort((a, b) => b.rating - a.rating);
+      break;
+    case 'rating':
+      products.sort((a, b) => b.rating - a.rating);
+      break;
+    case 'date':
+      products.sort(
+        (a, b) =>
+          new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+      );
+      break;
+    case 'price':
+      products.sort(
+        (a, b) =>
+          parseFloat(a.newPrice.replace('$', '')) -
+          parseFloat(b.newPrice.replace('$', ''))
+      );
+      break;
+    case 'price-desc':
+      products.sort(
+        (a, b) =>
+          parseFloat(b.newPrice.replace('$', '')) -
+          parseFloat(a.newPrice.replace('$', ''))
+      );
+      break;
+    default:
+      products.sort(
+        (a, b) =>
+          new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+      );
+      break;
+  }
+
+  // Total de productos antes de la paginación
+  const total = products.length;
+
+  // Paginación
+  const start = (page - 1) * limit;
+  const end = start + limit;
+  const paginatedProducts = products.slice(start, end);
+
+  return { products: paginatedProducts, total };
+};

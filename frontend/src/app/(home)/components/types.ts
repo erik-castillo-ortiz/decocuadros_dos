@@ -1,6 +1,7 @@
 export interface Product {
   id: number;
   name: string;
+  slug: string;
   image: string;
   category: string;
   categoryId: number;
@@ -9,6 +10,7 @@ export interface Product {
   newPrice: string;
   isHot?: boolean;
   discount?: string | null;
+  Description: string;
   shortDescription: string;
   SKU: string;
   sizes: string[];

@@ -181,3 +181,21 @@ export const fetchFilteredProducts = async (
 
   return { products: paginatedProducts, total };
 };
+
+export const fetchProductBySlug = async (
+  slug: string
+): Promise<Product | null> => {
+  const product = productData.products.find(
+    (prod: Product) => prod.slug === slug
+  );
+  return product || null;
+};
+// export const fetchProductBySlug = (slug: string): Product | undefined => {
+//   return productData.products.find((product) => product.slug === slug);
+// };
+
+// export const fetchProductsByCategory = (categoryId: number): Product[] => {
+//   return productData.products.filter(
+//     (product) => product.categoryId === categoryId
+//   );
+// };

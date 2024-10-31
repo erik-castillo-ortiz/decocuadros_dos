@@ -41,7 +41,7 @@
         }
       ],
       "banner": {
-        "imgSrc": "assets/images/demoes/demo40/menu-banner-1.jpg",
+        "imgSrc": "/assets/images/demoes/demo40/menu-banner-1.jpg",
         "content": {
           "titlePrefix": "UP TO",
           "mainTitle": "50%",
@@ -50,31 +50,31 @@
       },
       "partners": [
         {
-          "imgSrc": "assets/images/brands/small/brand1.png",
+          "imgSrc": "/assets/images/brands/small/brand1.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand2.png",
+          "imgSrc": "/assets/images/brands/small/brand2.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand3.png",
+          "imgSrc": "/assets/images/brands/small/brand3.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand4.png",
+          "imgSrc": "/assets/images/brands/small/brand4.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand5.png",
+          "imgSrc": "/assets/images/brands/small/brand5.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
@@ -122,7 +122,7 @@
         }
       ],
       "banner": {
-        "imgSrc": "assets/images/demoes/demo40/menu-banner-1.jpg",
+        "imgSrc": "/assets/images/demoes/demo40/menu-banner-1.jpg",
         "content": {
           "titlePrefix": "UP TO",
           "mainTitle": "50%",
@@ -131,31 +131,31 @@
       },
       "partners": [
         {
-          "imgSrc": "assets/images/brands/small/brand1.png",
+          "imgSrc": "/assets/images/brands/small/brand1.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand2.png",
+          "imgSrc": "/assets/images/brands/small/brand2.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand3.png",
+          "imgSrc": "/assets/images/brands/small/brand3.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand4.png",
+          "imgSrc": "/assets/images/brands/small/brand4.png",
           "alt": "logo image",
           "width": 140,
           "height": 60
         },
         {
-          "imgSrc": "assets/images/brands/small/brand5.png",
+          "imgSrc": "/assets/images/brands/small/brand5.png",
           "alt": "logo image",
           "width": 140,
           "height": 60

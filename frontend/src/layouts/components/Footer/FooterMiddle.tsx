@@ -50,7 +50,7 @@ const FooterMiddle: React.FC<FooterMiddleProps> = ({
                   key={index}
                   className={`payment-icon ${method.split('.')[0]}`}
                   style={{
-                    backgroundImage: `url(assets/images/payments/${method})`,
+                    backgroundImage: `url(/assets/images/payments/${method})`,
                   }}
                 ></span>
               ))}

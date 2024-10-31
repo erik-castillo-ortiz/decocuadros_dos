@@ -159,6 +159,8 @@ const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
             <ProductGallery
               mainImage={product.image}
               gallery={product.gallery || []}
+              isHot={product.isHot}
+              discount={product.discount}
             />
           </div>
           <div className="col-lg-7 col-md-6 product-single-details">

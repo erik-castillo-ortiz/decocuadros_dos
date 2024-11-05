@@ -1,6 +1,16 @@
 import productData from '@/app/helpers/products2.json';
 import { Product } from '@/app/(home)/components/types';
 import categories from '@/app/helpers/Categories_2.json';
+
+export interface Category {
+  categoryId: number;
+  categoryName: string;
+  categorySlug: string;
+  categoryParent: number | null;
+  subcategories?: Category[];
+  fullPath?: string;
+}
+
 export const fetchFeaturedProduct = async () => {
   const products = productData.products;
 
@@ -212,12 +222,12 @@ export const fetchFilteredProducts = async (
   page = 1,
   sortOrder = 'menu_order',
   priceRange?: { min: number; max: number },
-  categoryId?: number
+  categoryId?: number | null
 ): Promise<{ products: Product[]; total: number }> => {
   let products = [...productData.products];
 
   // Filtrar productos por categoría y sus subcategorías si se proporciona un categoryId
-  if (categoryId) {
+  if (categoryId !== null && categoryId !== undefined) {
     const categoryIds = getSubcategoryIds(categoryId);
     products = products.filter((product) =>
       categoryIds.includes(product.categoryId)
@@ -281,12 +291,37 @@ export const fetchFilteredProducts = async (
 // export const fetchCategoryData = async (categorySlug: string) => {
 //   return categories.find((cat) => cat.categorySlug === categorySlug) || null;
 // };
+// export const fetchCategoryData = async (categorySlug: string) => {
+//   const slugs = categorySlug.split('/');
+//   return (
+//     categories.find((cat) => cat.categorySlug === slugs[slugs.length - 1]) ||
+//     null
+//   );
+// };
 export const fetchCategoryData = async (categorySlug: string) => {
+  console.log('categorySlug', categorySlug);
+
   const slugs = categorySlug.split('/');
-  return (
-    categories.find((cat) => cat.categorySlug === slugs[slugs.length - 1]) ||
-    null
-  );
+
+  let currentCategories = categories;
+  let category: Category | null = null;
+  let fullPath = '';
+
+  for (const slug of slugs) {
+    category =
+      currentCategories.find((cat) => cat.categorySlug === slug) || null;
+    if (!category) {
+      return null; // Si no se encuentra la categoría en cualquier nivel, devolver null
+    }
+    fullPath = fullPath
+      ? `${fullPath}/${category.categorySlug}`
+      : category.categorySlug;
+    currentCategories = categories.filter(
+      (cat) => cat.categoryParent === category?.categoryId
+    );
+  }
+  console.log('category', category);
+  return { ...category, fullPath: `/categoria/${fullPath}` };
 };
 export const fetchProductBySlug = async (
   slug: string

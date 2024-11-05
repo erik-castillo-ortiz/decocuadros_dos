@@ -112,5 +112,17 @@
     "categoryName": "Action Figures",
     "categorySlug": "action-figures",
     "categoryParent": 5
+  },
+  {
+    "categoryId": 503,
+    "categoryName": "Juguetes Bebe",
+    "categorySlug": "juguetes-bebe",
+    "categoryParent": 502
+  },
+  {
+    "categoryId": 504,
+    "categoryName": "Jugueteria Test",
+    "categorySlug": "jugueteria-test",
+    "categoryParent": 503
   }
 ]

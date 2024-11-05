@@ -834,6 +834,33 @@
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
       "publishDate": "2024-09-30 12:00:00"
+    },
+    {
+      "id": 31,
+      "name": "Producto Test",
+      "slug": "producto-test",
+      "image": "/assets/images/demoes/demo36/products/product-2.jpg",
+      "category": "Clothing",
+      "categoryId": 303,
+      "rating": 60,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": true,
+      "discount": "-20%",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "shortDescription": "A high-quality speaker with powerful sound.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:00:00"
     }
   ]
 }

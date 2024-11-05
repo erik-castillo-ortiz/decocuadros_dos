@@ -203,9 +203,10 @@ const getSubcategoryIds = (categoryId: number): number[] => {
 //   const start = (page - 1) * limit;
 //   const end = start + limit;
 //   const paginatedProducts = products.slice(start, end);
-
+//   console.log(paginatedProducts);
 //   return { products: paginatedProducts, total };
 // };
+
 export const fetchFilteredProducts = async (
   limit = 12,
   page = 1,
@@ -272,13 +273,21 @@ export const fetchFilteredProducts = async (
   const start = (page - 1) * limit;
   const end = start + limit;
   const paginatedProducts = products.slice(start, end);
-  console.log(paginatedProducts);
+  console.log('paginatedProducts', paginatedProducts);
+  console.log('total', total);
   return { products: paginatedProducts, total };
 };
-export const fetchCategoryData = async (categorySlug: string) => {
-  return categories.find((cat) => cat.categorySlug === categorySlug) || null;
-};
 
+// export const fetchCategoryData = async (categorySlug: string) => {
+//   return categories.find((cat) => cat.categorySlug === categorySlug) || null;
+// };
+export const fetchCategoryData = async (categorySlug: string) => {
+  const slugs = categorySlug.split('/');
+  return (
+    categories.find((cat) => cat.categorySlug === slugs[slugs.length - 1]) ||
+    null
+  );
+};
 export const fetchProductBySlug = async (
   slug: string
 ): Promise<Product | null> => {

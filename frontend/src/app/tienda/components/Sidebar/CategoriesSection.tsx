@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Category } from '@/app/tienda/services/Services';
 
@@ -6,21 +6,48 @@ interface CategoriesSectionProps {
   categories: Category[];
   isOpen: boolean;
   toggleSection: () => void;
+  activeCategoryId?: number | null;
 }
 
 const CategoriesSection: React.FC<CategoriesSectionProps> = ({
   categories,
   isOpen,
   toggleSection,
+  activeCategoryId,
 }) => {
   const [activeCategories, setActiveCategories] = useState<number[]>([]);
 
-  const toggleCategory = (categoryId: number) => {
-    setActiveCategories((prevCategories) =>
-      prevCategories.includes(categoryId)
-        ? prevCategories.filter((id) => id !== categoryId)
-        : [...prevCategories, categoryId]
+  useEffect(() => {
+    if (activeCategoryId) {
+      const expandedCategories = getParentCategoryIds(activeCategoryId);
+      setActiveCategories(expandedCategories);
+    }
+  }, [activeCategoryId, categories]);
+
+  const getParentCategoryIds = (categoryId: number): number[] => {
+    const expandedCategories: number[] = [];
+    let currentCategory = categories.find(
+      (cat) => cat.categoryId === categoryId
     );
+
+    while (currentCategory) {
+      expandedCategories.push(currentCategory.categoryId);
+      currentCategory = categories.find(
+        (cat) => cat.categoryId === currentCategory?.categoryParent
+      );
+    }
+
+    return expandedCategories;
+  };
+
+  const toggleCategory = (categoryId: number) => {
+    setActiveCategories((prevCategories) => {
+      if (prevCategories.includes(categoryId)) {
+        return prevCategories.filter((id) => id !== categoryId);
+      } else {
+        return [...prevCategories, categoryId];
+      }
+    });
   };
 
   return (
@@ -47,50 +74,74 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({
       >
         <div className="widget-body">
           <ul className="cat-list">
-            {categories.map((category) => (
-              <li key={category.id}>
-                <div
-                  className={`d-flex justify-content-between align-items-center ${
-                    activeCategories.includes(category.id) ? '' : 'collapsed'
-                  }`}
-                >
-                  <Link
-                    href={`/category/${category.id}`}
-                    className="category-link"
+            {categories
+              .filter((category) => category.categoryParent === null)
+              .map((category) => (
+                <li key={category.categoryId}>
+                  <div
+                    className={`d-flex justify-content-between align-items-center ${
+                      activeCategories.includes(category.categoryId) ||
+                      activeCategoryId === category.categoryId ||
+                      (category.subcategories &&
+                        category.subcategories.some(
+                          (subcategory) =>
+                            activeCategoryId === subcategory.categoryId
+                        ))
+                        ? ''
+                        : 'collapsed'
+                    }`}
                   >
-                    {category.name}
-                  </Link>
-                  {category.subcategories &&
-                    category.subcategories.length > 0 && (
-                      <span
-                        className="toggle"
-                        onClick={() => toggleCategory(category.id)}
-                      ></span>
-                    )}
-                </div>
-                {category.subcategories &&
-                  category.subcategories.length > 0 && (
-                    <div
-                      className={`collapse-transition ${
-                        activeCategories.includes(category.id) ? 'show' : ''
+                    <Link
+                      href={`/categoria/${category.categorySlug}`}
+                      className={`category-link ${
+                        activeCategoryId === category.categoryId
+                          ? 'category-link--active'
+                          : ''
                       }`}
                     >
-                      <ul className="cat-sublist">
-                        {category.subcategories.map((subcategory, index) => (
-                          <li key={index}>
-                            <Link
-                              href={`/subcategory/${subcategory.name}`}
-                              className="subcategory-link"
-                            >
-                              {subcategory.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-              </li>
-            ))}
+                      {category.categoryName}
+                    </Link>
+                    {category.subcategories &&
+                      category.subcategories.length > 0 && (
+                        <span
+                          className="toggle"
+                          onClick={() => toggleCategory(category.categoryId)}
+                        ></span>
+                      )}
+                  </div>
+                  {category.subcategories &&
+                    category.subcategories.length > 0 && (
+                      <div
+                        className={`collapse-transition ${
+                          activeCategories.includes(category.categoryId) ||
+                          category.subcategories.some(
+                            (subcategory) =>
+                              activeCategoryId === subcategory.categoryId
+                          )
+                            ? 'show'
+                            : ''
+                        }`}
+                      >
+                        <ul className="cat-sublist">
+                          {category.subcategories.map((subcategory) => (
+                            <li key={subcategory.categoryId}>
+                              <Link
+                                href={`/categoria/${subcategory.categorySlug}`}
+                                className={`subcategory-link ${
+                                  activeCategoryId === subcategory.categoryId
+                                    ? 'subcategory-link--active'
+                                    : ''
+                                }`}
+                              >
+                                {subcategory.categoryName}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                </li>
+              ))}
           </ul>
         </div>
       </div>

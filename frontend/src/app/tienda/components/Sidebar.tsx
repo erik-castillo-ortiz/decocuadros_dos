@@ -7,9 +7,10 @@ import BrandSection from './Sidebar/BrandSection';
 
 interface SidebarProps {
   onFilter?: (minPrice: number, maxPrice: number) => void;
+  activeCategoryId?: number | null;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ onFilter }) => {
+const Sidebar: React.FC<SidebarProps> = ({ onFilter, activeCategoryId }) => {
   const [sidebarData, setSidebarData] = useState<SidebarData>({
     categories: [],
     priceRange: { min: 0, max: 1000 },
@@ -56,6 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onFilter }) => {
           categories={sidebarData.categories}
           isOpen={isCategoriesOpen}
           toggleSection={() => toggleSection('categories')}
+          activeCategoryId={activeCategoryId} // Pasamos la categoría activa
         />
         <PriceSection
           priceRange={sidebarData.priceRange}

@@ -1,0 +1,116 @@
+[
+  {
+    "categoryId": 1,
+    "categoryName": "Electronics",
+    "categorySlug": "electronics",
+    "categoryParent": null
+  },
+  {
+    "categoryId": 101,
+    "categoryName": "Drones",
+    "categorySlug": "drones",
+    "categoryParent": 1
+  },
+  {
+    "categoryId": 102,
+    "categoryName": "Cameras",
+    "categorySlug": "cameras",
+    "categoryParent": 1
+  },
+  {
+    "categoryId": 103,
+    "categoryName": "Speakers",
+    "categorySlug": "speakers",
+    "categoryParent": 1
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Fashion",
+    "categorySlug": "fashion",
+    "categoryParent": null
+  },
+  {
+    "categoryId": 201,
+    "categoryName": "Hats",
+    "categorySlug": "hats",
+    "categoryParent": 2
+  },
+  {
+    "categoryId": 202,
+    "categoryName": "Jackets",
+    "categorySlug": "jackets",
+    "categoryParent": null
+  },
+  {
+    "categoryId": 203,
+    "categoryName": "Pants y Denim",
+    "categorySlug": "pants-y-denim",
+    "categoryParent": 2
+  },
+  {
+    "categoryId": 204,
+    "categoryName": "Tees, Knits y Polos",
+    "categorySlug": "tees-knits-y-polos",
+    "categoryParent": 2
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Sports",
+    "categorySlug": "sports",
+    "categoryParent": null
+  },
+  {
+    "categoryId": 301,
+    "categoryName": "Balls",
+    "categorySlug": "balls",
+    "categoryParent": 3
+  },
+  {
+    "categoryId": 302,
+    "categoryName": "Equipment",
+    "categorySlug": "equipment",
+    "categoryParent": 3
+  },
+  {
+    "categoryId": 303,
+    "categoryName": "Clothing",
+    "categorySlug": "clothing",
+    "categoryParent": 3
+  },
+  {
+    "categoryId": 4,
+    "categoryName": "Accessories",
+    "categorySlug": "accessories",
+    "categoryParent": null
+  },
+  {
+    "categoryId": 401,
+    "categoryName": "Bags",
+    "categorySlug": "bags",
+    "categoryParent": 4
+  },
+  {
+    "categoryId": 402,
+    "categoryName": "Headphones",
+    "categorySlug": "headphones",
+    "categoryParent": 4
+  },
+  {
+    "categoryId": 5,
+    "categoryName": "Toys",
+    "categorySlug": "toys",
+    "categoryParent": null
+  },
+  {
+    "categoryId": 501,
+    "categoryName": "Cars",
+    "categorySlug": "cars",
+    "categoryParent": 5
+  },
+  {
+    "categoryId": 502,
+    "categoryName": "Action Figures",
+    "categorySlug": "action-figures",
+    "categoryParent": 5
+  }
+]

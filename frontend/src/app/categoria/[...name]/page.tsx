@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Tienda from '@/app/tienda/page';
 
 const Categoria = ({ params }: { params: { name: string[] } }) => {
-  return (
-    <div>Categoria {params.name}</div>
-  )
-}
+  const categorySlug = params.name[0];
+  return <Tienda categorySlug={categorySlug} />;
+};
 
-export default Categoria
+export default Categoria;

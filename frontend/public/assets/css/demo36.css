@@ -16766,7 +16766,7 @@ span.toggle {
   font-family: var(--font-poppins), sans-serif;
 }
 
-/* CUSTOM DECOCUADROS */
+/* CUSTOM DECOCUADROS *//* CUSTOM DECOCUADROS *//* CUSTOM DECOCUADROS *//* CUSTOM DECOCUADROS */
 
 .modal-overlay {
   position: fixed;
@@ -16798,15 +16798,11 @@ span.toggle {
 .mfp-content {
   max-width: 931px;
 }
-/* .badge-custom {
-  top: 0.5rem !important;
-  start: 80% !important;
-  left: 1.5rem !important;
-} */
+
 
 .badge-custom {
-  top: 0.5rem !important; /* Adjust to move the badge vertically */
-  right: -10px !important; /* Adjust to move the badge horizontally */
+  top: 0.5rem !important; 
+  right: -10px !important; 
 }
 
 .menu-depart-overlay {
@@ -16820,34 +16816,15 @@ span.toggle {
   visibility: visible;
 }
 
-/* .custom-transition {
-  position: fixed !important;
-  top: -100px;
-  transition: top 0.4s ease-in-out;
-}
 
-.custom-transition.fixed {
-  top: 0px !important;
-  transition: top 0.4s ease-in-out;
-} */
-/* .custom-transition {
-  position: fixed !important;
-  top: -100px;
-  transition: top 0.8s ease-in-out;
-}
-
-.custom-transition.fixed {
-  top: 0px !important;
-} */
-/* Clase que maneja todo el proceso de transición */
 .custom-transition {
   position: fixed !important;
   top: -100px;
   transition: top 0.4s ease-in-out;
-  z-index: 999; /* Asegura que el menú se muestre por encima */
+  z-index: 999; 
 }
 
-/* Cuando el header está en su lugar final, top: 0 */
+
 .custom-transition.fixed {
   top: 0px !important;
 }
@@ -16882,13 +16859,7 @@ span.toggle {
   padding: 1.7rem 4rem 1.7rem;
 }
 
-/* .products-slider.owl-carousel.owl-theme.nav-outer.carousel-with-bg.show-nav-hover.nav-image-center.appear-animate.owl-loaded.owl-drag.animated.fadeIn.appear-animation-visible {
-  padding-bottom: 0px;
-} */
-/* .products-slider-2 {
-  padding-bottom: 0px;
 
-} */
 .sale-banner.banner {
   margin-top: -39px;
   padding-top: 3.4rem;
@@ -16915,19 +16886,19 @@ span.toggle {
   height: auto;
 }
 
-/* thumbs */
+
 
 .prod-thumbnail img {
   width: 138.5px;
   height: 138.5px;
 }
 
-/* Miniatura activa */
+
 .active-thumbnail {
   border: 2px solid #000;
   border-radius: 4px;
 }
-/* Estilos responsivos para pantallas más pequeñas */
+
 @media (max-width: 1024px) {
   .prod-thumbnail img {
     width: 86.5px;
@@ -16935,7 +16906,7 @@ span.toggle {
   }
 }
 
-/* Estilos responsivos para pantallas más pequeñas */
+
 @media (max-width: 768px) {
   .prod-thumbnail img {
     width: 81.5px;
@@ -16948,4 +16919,193 @@ span.toggle {
     width: 80px;
     height: 80px;
   }
+}
+
+.product-single-details .test-nav-product .product-nav {
+  position: relative;
+  display: flex;
+  top: 0px;
+  right: 10px;
+}
+
+.product-single-details .test-nav-product .product-nav.top-0 {
+  top: 0;
+}
+
+.product-single-details .test-nav-product .product-nav a {
+  color: #222529;
+  text-decoration: none;
+}
+
+.product-single-details .test-nav-product .product-nav .product-prev,
+.product-single-details .test-nav-product .product-nav .product-next {
+  float: left;
+  margin-left: 2px;
+}
+
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-prev.disabled
+  > a,
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-next.disabled
+  > a {
+  color: #999;
+  cursor: no-drop;
+}
+
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-prev:hover
+  .product-popup,
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-next:hover
+  .product-popup {
+  display: block;
+}
+
+.product-single-details .test-nav-product .product-nav a:hover {
+  color: #333;
+}
+
+.product-single-details .test-nav-product .product-nav .product-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 28px;
+  height: 28px;
+  line-height: 23px;
+  border: 2px solid #e7e7e7;
+  border-radius: 14px;
+  font-family: 'porto';
+}
+
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-prev
+  .product-link::before {
+  content: '';
+  display: block;
+}
+
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-next
+  .product-link::before {
+  content: '';
+  display: block;
+}
+
+.product-single-details .test-nav-product .product-nav .product-popup {
+  position: absolute;
+  top: 31px;
+  display: none;
+  right: 0;
+  font-size: 13px;
+  z-index: 999;
+  width: 110px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-single-details .test-nav-product .product-nav .product-popup::before {
+  right: 36px;
+  border-bottom: 7px solid #333;
+  border-left: 7px solid transparent !important;
+  border-right: 7px solid transparent !important;
+  content: '';
+  position: absolute;
+  top: -4px;
+}
+
+.product-single-details .test-nav-product .product-nav .box-content {
+  border-top: 3px solid #222529;
+  display: block;
+  padding: 10px 10px 11px;
+}
+
+.product-single-details .test-nav-product .product-nav .box-content > span {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: block;
+  padding-top: 5px;
+  line-height: 1.4em;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #797876;
+}
+
+.product-single-details
+  .test-nav-product
+  .product-nav
+  .product-next
+  .product-popup::before {
+  right: 7px;
+}
+
+
+.category-link,
+.subcategory-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.category-link:hover,
+.subcategory-link:hover {
+  color: #007bff;
+}
+
+
+.category-link--active,
+.subcategory-link--active {
+
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  border-left: 4px solid #007bff;
+  padding-left: 8px;
+}
+
+
+.collapsed {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+
+.collapse-transition {
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.collapse-transition.show {
+  max-height: 500px; 
+  opacity: 1;
+}
+
+
+.toggle {
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.toggle:hover {
+  transform: scale(1.2);
 }

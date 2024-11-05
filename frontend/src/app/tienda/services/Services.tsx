@@ -1,14 +1,12 @@
+import categories from '@/app/helpers/Categories_2.json';
 import sidebarData from '@/app/tienda/helpers/SideBar.json';
 
-export interface Subcategory {
-  name: string;
-  items: string[];
-}
-
 export interface Category {
-  id: number;
-  name: string;
-  subcategories: Subcategory[];
+  categoryId: number;
+  categoryName: string;
+  categorySlug: string;
+  categoryParent: number | null;
+  subcategories?: Category[];
 }
 
 export interface SidebarData {
@@ -22,17 +20,34 @@ export interface SidebarData {
 }
 
 export const fetchSidebarData = async (): Promise<SidebarData> => {
-  // Transformamos `subcategories` de string[] a Subcategory[]
-  const transformedData: SidebarData = {
-    ...sidebarData,
-    categories: sidebarData.categories.map((category) => ({
-      ...category,
-      subcategories: category.subcategories.map((subcat) => ({
-        name: subcat,
-        items: [], // Ajusta esto según lo que necesites para `items`
-      })),
-    })),
-  };
+  // Organizar las categorías en un formato jerárquico
+  const categoryMap = new Map<number, Category>();
 
-  return transformedData;
+  // Primero, crear una copia de cada categoría sin subcategorías y agregarla al mapa
+  categories.forEach((category) => {
+    categoryMap.set(category.categoryId, { ...category, subcategories: [] });
+  });
+
+  // Luego, asignar subcategorías a sus respectivas categorías padre
+  categoryMap.forEach((category) => {
+    if (category.categoryParent !== null) {
+      const parentCategory = categoryMap.get(category.categoryParent);
+      if (parentCategory) {
+        parentCategory.subcategories!.push(category);
+      }
+    }
+  });
+
+  // Filtrar solo las categorías principales (sin padres)
+  const mainCategories = Array.from(categoryMap.values()).filter(
+    (category) => category.categoryParent === null
+  );
+
+  // Retornar la estructura jerárquica en el formato de SidebarData
+  return {
+    categories: mainCategories,
+    priceRange: sidebarData.priceRange || { min: 0, max: 1000 },
+    colors: sidebarData.colors || [],
+    brands: sidebarData.brands || [],
+  };
 };

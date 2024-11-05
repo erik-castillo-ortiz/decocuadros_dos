@@ -25,7 +25,7 @@ const Item: React.FC<ItemProps> = ({ product }) => {
 
       <div className="product-default inner-quickview inner-icon">
         <figure>
-          <Link href="/demo36-product.html">
+          <Link href={`/producto/${product.slug}`}>
             <img
               src={product.image}
               width={239}

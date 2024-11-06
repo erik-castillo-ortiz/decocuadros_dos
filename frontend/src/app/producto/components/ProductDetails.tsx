@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { Product } from '@/app/(home)/components/types';
 import socialIcons from '@/app/helpers/socials-networks.json';

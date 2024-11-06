@@ -1,7 +1,7 @@
-'use client';
-import React, { useEffect, useState } from 'react';
+import { notFound } from 'next/navigation';
+import React from 'react';
 import { fetchProductBySlug } from '@/app/(home)/components/services/Services';
-import { Product } from '@/app/(home)/components/types';
+// import { Product } from '@/app/(home)/components/types';
 import ProductGallery from '../components/ProductGallery';
 import ProductDetails from '../components/ProductDetails';
 import ProductTabs from '../components/ProductTabs';
@@ -13,20 +13,12 @@ interface ProductPageProps {
   };
 }
 
-const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
+const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   const { slug } = params;
-  const [product, setProduct] = useState<Product | null>(null);
+  const fetchedProduct = await fetchProductBySlug(slug);
 
-  useEffect(() => {
-    const loadProduct = async () => {
-      const fetchedProduct = await fetchProductBySlug(slug);
-      setProduct(fetchedProduct || null);
-    };
-    loadProduct();
-  }, [slug]);
-
-  if (!product) {
-    return <p>Product not found.</p>;
+  if (!fetchedProduct) {
+    notFound();
   }
 
   return (
@@ -35,18 +27,18 @@ const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
         <div className="row">
           <div className="col-lg-5 col-md-6 product-single-gallery">
             <ProductGallery
-              mainImage={product.image}
-              gallery={product.gallery || []}
-              isHot={product.isHot}
-              discount={product.discount}
+              mainImage={fetchedProduct.image}
+              gallery={fetchedProduct.gallery || []}
+              isHot={fetchedProduct.isHot}
+              discount={fetchedProduct.discount}
             />
           </div>
           <div className="col-lg-7 col-md-6 product-single-details">
-            <ProductDetails product={product} />
+            <ProductDetails product={fetchedProduct} />
           </div>
         </div>
       </div>
-      <ProductTabs description={product.Description} />
+      <ProductTabs description={fetchedProduct.Description} />
       <RelatedProducts />
     </div>
   );

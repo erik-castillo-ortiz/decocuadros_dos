@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ProductSlider from './ProductSlider';
-import Banners from './Banners';
+// import Banners from './Banners';
 import LargeBanner from './LargeBanner';
 
 const GadgetsSection = () => {

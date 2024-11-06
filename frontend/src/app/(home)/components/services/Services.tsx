@@ -127,7 +127,7 @@ export const fetchOfferProducts = async (
   return products;
 };
 
-const DEFAULT_PRODUCT_LIMIT = 12;
+// const DEFAULT_PRODUCT_LIMIT = 12;
 
 const getSubcategoryIds = (categoryId: number): number[] => {
   console.log('Category: ', categoryId);

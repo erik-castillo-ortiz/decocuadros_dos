@@ -75,7 +75,7 @@ export interface SidebarData {
 }
 
 const buildFullPath = (category: Category, categories: Category[]): string => {
-  let pathSegments: string[] = [];
+  const pathSegments: string[] = [];
   let currentCategory: Category | undefined = category;
 
   while (currentCategory) {

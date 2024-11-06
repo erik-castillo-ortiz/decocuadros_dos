@@ -16,8 +16,8 @@ export default function NotFound() {
                         404 <i className="fas fa-file"></i>
                       </h2>
                       <p>
-                        We're sorry, but the page you were looking for doesn't
-                        exist.
+                        We&apos;re sorry, but the page you were looking for
+                        doesn&apos;t exist.
                       </p>
                       <Link href="/" legacyBehavior>
                         <a className="btn btn-primary mt-3">Go Back Home</a>

@@ -10,7 +10,7 @@ const BannerBottom: React.FC = () => {
     >
       <div className="container text-center d-flex align-items-center justify-content-center flex-column flex-xl-row">
         <img
-          src="assets/images/demoes/demo36/shop-logo.png"
+          src="/assets/images/demoes/demo36/shop-logo.png"
           width="116"
           height="23"
           alt="logo"

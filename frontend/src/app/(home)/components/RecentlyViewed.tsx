@@ -13,9 +13,9 @@ const RecentlyViewed: React.FC = () => {
         </a>
       </div>
 
-      <div className="products-slider owl-carousel owl-theme carousel-with-bg nav-circle pb-0 owl-loaded owl-drag">
-        <ProductSlider categoryId={1} productLimit={10} />
-      </div>
+      {/* <div className="products-slider owl-carousel owl-theme carousel-with-bg nav-circle pb-0 owl-loaded owl-drag"> */}
+      <ProductSlider categoryId={1} productLimit={10} background={true} />
+      {/* </div> */}
     </div>
   );
 };

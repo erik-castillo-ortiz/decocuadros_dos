@@ -10,7 +10,7 @@ export interface Product {
   newPrice: string;
   isHot?: boolean;
   discount?: string | null;
-  Description: string;
+  description: string;
   shortDescription: string;
   SKU: string;
   sizes: string[];
@@ -19,6 +19,37 @@ export interface Product {
   isFeatured: boolean;
   offerEnds: string | null;
   publishDate: string | null;
+  attributes?: Attribute[];
+  variations?: Variation[];
+  basePrice?: string;
+  maxPrice?: string;
+}
+
+export interface Attribute {
+  id: number;
+  name: string;
+  type: string;
+  values: AttributeValue[];
+  isVariation: boolean;
+}
+
+export interface AttributeValue {
+  id: number;
+  name: string;
+  value: string;
+}
+
+export interface Variation {
+  id: number;
+  attributes: VariationAttribute[];
+  price: string;
+  stock: number;
+  SKU: string;
+}
+
+export interface VariationAttribute {
+  attributeId: number;
+  valueId: number;
 }
 
 export interface BannerProps {

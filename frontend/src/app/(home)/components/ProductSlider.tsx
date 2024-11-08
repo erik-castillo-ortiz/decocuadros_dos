@@ -12,7 +12,7 @@ import { fetchProductsByCategory } from '@/app/(home)/components/services/Servic
 interface ProductSliderProps {
   categoryId: number;
   productLimit: number;
-  background?: boolean | null;
+  background: boolean;
 }
 
 const ProductSlider: React.FC<ProductSliderProps> = ({
@@ -38,15 +38,12 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
   if (!products || products.length === 0) {
     return <div>No products available</div>;
   }
-
+  console.log('background', background);
   return (
     <div
       className={`products-slider owl-carousel owl-theme nav-outer ${
-        background ? 'carousel-with-bg' : ''
-      }show-nav-hover nav-image-center appear-animate owl-loaded owl-drag animated fadeIn appear-animation-visible`}
-      data-animation-name="fadeIn"
-      data-animation-delay="100"
-      style={{ animationDuration: '1000ms' }}
+        background === true ? 'carousel-with-bg' : ''
+      } show-nav-hover nav-image-center appear-animate owl-loaded owl-drag animated fadeIn appear-animation-visible`}
     >
       <div className="owl-stage-outer">
         <div className="owl-stage">

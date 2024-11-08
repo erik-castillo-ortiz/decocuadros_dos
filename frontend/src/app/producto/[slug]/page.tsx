@@ -38,7 +38,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
           </div>
         </div>
       </div>
-      <ProductTabs description={fetchedProduct.Description} />
+      <ProductTabs description={fetchedProduct.description} />
       <RelatedProducts />
     </div>
   );

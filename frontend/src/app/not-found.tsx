@@ -13,14 +13,15 @@ export default function NotFound() {
                   <div className="col-lg-6 offset-lg-1">
                     <div className="page-not-found-main">
                       <h2 className="entry-title">
-                        404 <i className="fas fa-file"></i>
+                        {'404'} <i className="fas fa-file"></i>
                       </h2>
                       <p>
-                        We&apos;re sorry, but the page you were looking for
-                        doesn&apos;t exist.
+                        {
+                          "We're sorry, but the page you were looking for doesn't exist."
+                        }
                       </p>
                       <Link href="/" legacyBehavior>
-                        <a className="btn btn-primary mt-3">Go Back Home</a>
+                        <a className="btn btn-primary mt-3">{'Go Back Home'}</a>
                       </Link>
                     </div>
                   </div>

@@ -18,7 +18,7 @@ const GadgetsSection = () => {
             <h4 className="section-title">Cuadros Florales</h4>
           </div>
           <div className="categories-container-prod">
-            <ProductSlider categoryId={2} productLimit={10} />
+            <ProductSlider categoryId={2} productLimit={10} background={true} />
           </div>
           {/* <ProductSlider categoryId={1} productLimit={10} /> */}
         </div>

@@ -19,7 +19,7 @@ const ElectronicsSection = () => {
           <Banners />
         </div>
         {/* Carrusel de productos */}
-        <ProductSlider categoryId={1} productLimit={10} />
+        <ProductSlider categoryId={1} productLimit={10} background={true} />
       </div>
     </div>
   );

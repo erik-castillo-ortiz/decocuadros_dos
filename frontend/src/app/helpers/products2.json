@@ -26,9 +26,9 @@
   },
   "products": [
     {
-      "id": 1,
+      "id": 0,
       "name": "PT Speaker",
-      "slug": "pt-speaker",
+      "slug": "pt-speaker-66",
       "image": "/assets/images/demoes/demo36/products/product-2.jpg",
       "category": "Speakers",
       "categoryId": 2,
@@ -37,7 +37,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -50,7 +50,888 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "PT Speaker",
+      "slug": "pt-speaker-69",
+      "image": "/assets/images/demoes/demo36/products/product-2.jpg",
+      "category": "Speakers",
+      "categoryId": 2,
+      "rating": 60,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": true,
+      "discount": "-20%",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "shortDescription": "A high-quality speaker with powerful sound.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Artistic Canvas Collection",
+      "slug": "artistic-canvas-collection",
+      "image": "/assets/images/demoes/demo36/products/product-6.jpg",
+      "category": "Wall Art",
+      "categoryId": 100,
+      "rating": 60,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": true,
+      "discount": "-20%",
+      "description": "Beautiful and customizable canvas art for every taste.",
+      "shortDescription": "A high-quality wall art collection for every taste.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 5,
+          "name": "Tipo de Cuadro",
+          "type": "image",
+          "values": [
+            {
+              "id": 1,
+              "name": "Canvas Art",
+              "value": "/path/to/canvas_art_image.jpg"
+            },
+            {
+              "id": 2,
+              "name": "Framed Canvas",
+              "value": "/path/to/framed_canvas_image.jpg"
+            }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 6,
+          "name": "Frame Style",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "Floating", "value": "floating" },
+            { "id": 2, "name": "Modern Deep", "value": "modern_deep" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 7,
+          "name": "Frame Color",
+          "type": "image",
+          "values": [
+            { "id": 1, "name": "Black", "value": "/path/to/black_frame.jpg" },
+            { "id": 2, "name": "White", "value": "/path/to/white_frame.jpg" },
+            { "id": 3, "name": "Gold", "value": "/path/to/gold_frame.jpg" },
+            {
+              "id": 4,
+              "name": "Gray Wash",
+              "value": "/path/to/gray_wash_frame.jpg"
+            }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 8,
+          "name": "Tamaño 2",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "12\" X 8\"", "value": "12 X 8" },
+            { "id": 2, "name": "24\" X 16\"", "value": "24 X 16" },
+            { "id": 3, "name": "30\" X 20\"", "value": "30 X 20" },
+            { "id": 4, "name": "36\" X 24\"", "value": "36 X 24" },
+            { "id": 5, "name": "39\" X 26\"", "value": "39 X 26" },
+            { "id": 6, "name": "45\" X 30\"", "value": "45 X 30" },
+            { "id": 7, "name": "48\" X 32\"", "value": "48 X 32" },
+            { "id": 8, "name": "51\" X 34\"", "value": "51 X 34" },
+            { "id": 9, "name": "13\" X 9\"", "value": "13 X 9" },
+            { "id": 10, "name": "19\" X 13\"", "value": "19 X 13" },
+            { "id": 11, "name": "25\" X 17\"", "value": "25 X 17" },
+            { "id": 12, "name": "31\" X 21\"", "value": "31 X 21" },
+            { "id": 13, "name": "37\" X 25\"", "value": "37 X 25" },
+            { "id": 14, "name": "40\" X 27\"", "value": "40 X 27" },
+            { "id": 15, "name": "43\" X 29\"", "value": "43 X 29" },
+            { "id": 16, "name": "49\" X 33\"", "value": "49 X 33" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 1 }
+          ],
+          "price": "$29.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-12X8"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 2 }
+          ],
+          "price": "$39.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-24X16"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 3 }
+          ],
+          "price": "$49.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-30X20"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 4 }
+          ],
+          "price": "$59.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-36X24"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 5 }
+          ],
+          "price": "$69.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-39X26"
+        },
+        {
+          "id": 6,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 6 }
+          ],
+          "price": "$79.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-45X30"
+        },
+        {
+          "id": 7,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 7 }
+          ],
+          "price": "$89.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-48X32"
+        },
+        {
+          "id": 8,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 8 }
+          ],
+          "price": "$99.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-51X34"
+        },
+        {
+          "id": 9,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 9 }
+          ],
+          "price": "$49.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-13X9"
+        },
+        {
+          "id": 10,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 10 }
+          ],
+          "price": "$59.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-19X13"
+        },
+        {
+          "id": 11,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 11 }
+          ],
+          "price": "$69.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-25X17"
+        },
+        {
+          "id": 12,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 12 }
+          ],
+          "price": "$79.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-31X21"
+        },
+        {
+          "id": 13,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 13 }
+          ],
+          "price": "$89.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-37X25"
+        },
+        {
+          "id": 14,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 14 }
+          ],
+          "price": "$99.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-40X27"
+        },
+        {
+          "id": 15,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 15 }
+          ],
+          "price": "$109.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-43X29"
+        },
+        {
+          "id": 16,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 1 },
+            { "attributeId": 7, "valueId": 1 },
+            { "attributeId": 8, "valueId": 16 }
+          ],
+          "price": "$119.00",
+          "stock": 10,
+          "SKU": "FRM-FLT-BLK-49X33"
+        },
+        {
+          "id": 17,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 9 }
+          ],
+          "price": "$111.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-13X9"
+        },
+        {
+          "id": 18,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 10 }
+          ],
+          "price": "$112.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-19X13"
+        },
+        {
+          "id": 19,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 11 }
+          ],
+          "price": "$113.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-25X17"
+        },
+        {
+          "id": 20,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 12 }
+          ],
+          "price": "$114.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-31X21"
+        },
+        {
+          "id": 21,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 13 }
+          ],
+          "price": "$115.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-37X25"
+        },
+        {
+          "id": 22,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 14 }
+          ],
+          "price": "$116.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-40X27"
+        },
+        {
+          "id": 23,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 15 }
+          ],
+          "price": "$117.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-43X29"
+        },
+        {
+          "id": 24,
+          "attributes": [
+            { "attributeId": 5, "valueId": 2 },
+            { "attributeId": 6, "valueId": 2 },
+            { "attributeId": 7, "valueId": 3 },
+            { "attributeId": 8, "valueId": 16 }
+          ],
+          "price": "$118.00",
+          "stock": 10,
+          "SKU": "FRM-MD-GOLD-49X33"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Artistic Canvas Collection",
+      "slug": "artistic-la",
+      "image": "/assets/images/demoes/demo36/products/product-6.jpg",
+      "category": "Wall Art",
+      "categoryId": 100,
+      "rating": 60,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": true,
+      "discount": "-20%",
+      "description": "Beautiful and customizable canvas art for every taste.",
+      "shortDescription": "A high-quality wall art collection for every taste.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-4.jpg",
+        "/assets/images/demoes/demo36/products/product-5.jpg",
+        "/assets/images/demoes/demo36/products/product-6.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 5,
+          "name": "Tipo de Cuadro",
+          "type": "image",
+          "values": [
+            {
+              "id": 1,
+              "name": "Canvas Art",
+              "value": "/path/to/canvas_art_image.jpg"
+            },
+            {
+              "id": 2,
+              "name": "Framed Canvas",
+              "value": "/path/to/framed_canvas_image.jpg"
+            }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 8,
+          "name": "Tamaño 2",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "12\" X 8\"", "value": "12 X 8" },
+            { "id": 2, "name": "24\" X 16\"", "value": "24 X 16" },
+            { "id": 3, "name": "30\" X 20\"", "value": "30 X 20" },
+            { "id": 4, "name": "36\" X 24\"", "value": "36 X 24" },
+            { "id": 5, "name": "39\" X 26\"", "value": "39 X 26" },
+            { "id": 6, "name": "45\" X 30\"", "value": "45 X 30" },
+            { "id": 7, "name": "48\" X 32\"", "value": "48 X 32" },
+            { "id": 8, "name": "51\" X 34\"", "value": "51 X 34" },
+            { "id": 9, "name": "13\" X 9\"", "value": "13 X 9" },
+            { "id": 10, "name": "19\" X 13\"", "value": "19 X 13" },
+            { "id": 11, "name": "25\" X 17\"", "value": "25 X 17" },
+            { "id": 12, "name": "31\" X 21\"", "value": "31 X 21" },
+            { "id": 13, "name": "37\" X 25\"", "value": "37 X 25" },
+            { "id": 14, "name": "40\" X 27\"", "value": "40 X 27" },
+            { "id": 15, "name": "43\" X 29\"", "value": "43 X 29" },
+            { "id": 16, "name": "49\" X 33\"", "value": "49 X 33" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 1 }
+          ],
+          "price": "$29.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-12X8"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 2 }
+          ],
+          "price": "$39.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-24X16"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 3 }
+          ],
+          "price": "$49.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-30X20"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 4 }
+          ],
+          "price": "$59.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-36X24"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 5 }
+          ],
+          "price": "$69.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-39X26"
+        },
+        {
+          "id": 6,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 6 }
+          ],
+          "price": "$79.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-45X30"
+        },
+        {
+          "id": 7,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 7 }
+          ],
+          "price": "$89.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-48X32"
+        },
+        {
+          "id": 8,
+          "attributes": [
+            { "attributeId": 5, "valueId": 1 },
+            { "attributeId": 8, "valueId": 8 }
+          ],
+          "price": "$99.00",
+          "stock": 10,
+          "SKU": "ART-CANVAS-51X34"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Beats Solo HD Drenched",
+      "slug": "beats-4",
+      "image": "/assets/images/demoes/demo36/products/product-3.jpg",
+      "category": "Headphones",
+      "categoryId": 3,
+      "rating": 100,
+      "oldPrice": "$29.00",
+      "newPrice": "$19.00",
+      "isHot": false,
+      "discount": null,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "shortDescription": "Stylish and comfortable headphones for everyday use.",
+      "SKU": "123456789",
+      "sizes": ["XL", "L", "M", "S"],
+      "gallery": [
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-3.jpg",
+        "/assets/images/demoes/demo36/products/product-3.jpg"
+      ],
+      "stock": 5,
+      "isFeatured": true,
+      "offerEnds": "2024-10-10 23:59:59",
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 2,
@@ -64,7 +945,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -77,7 +958,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 3,
@@ -91,7 +1073,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -104,7 +1086,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:05"
+      "publishDate": "2024-09-30 12:10:05",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 4,
@@ -118,7 +1201,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -131,7 +1214,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 5,
@@ -145,7 +1329,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -158,7 +1342,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 6,
@@ -172,7 +1457,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -185,7 +1470,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 7,
@@ -199,7 +1585,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -212,7 +1598,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 8,
@@ -226,7 +1713,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -239,7 +1726,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 9,
@@ -253,7 +1841,7 @@
       "newPrice": "$49.00",
       "isHot": true,
       "discount": "-30%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -266,7 +1854,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 10,
@@ -280,7 +1969,7 @@
       "newPrice": "$49.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -293,7 +1982,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 11,
@@ -307,7 +2097,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -320,7 +2110,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 12,
@@ -334,7 +2225,7 @@
       "newPrice": "$49.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -347,7 +2238,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 13,
@@ -361,7 +2353,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -374,7 +2366,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 14,
@@ -388,7 +2481,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -401,7 +2494,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 15,
@@ -415,7 +2609,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -428,7 +2622,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 16,
@@ -442,7 +2737,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -455,7 +2750,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:05"
+      "publishDate": "2024-09-30 12:10:05",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 17,
@@ -469,7 +2865,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -482,7 +2878,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 18,
@@ -496,7 +2993,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -509,7 +3006,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 19,
@@ -523,7 +3121,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -536,7 +3134,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 20,
@@ -550,7 +3249,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -563,7 +3262,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 21,
@@ -577,7 +3377,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -590,7 +3390,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 22,
@@ -604,7 +3505,7 @@
       "newPrice": "$49.00",
       "isHot": true,
       "discount": "-30%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -617,7 +3518,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 23,
@@ -631,7 +3633,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -644,7 +3646,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 24,
@@ -658,7 +3761,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -671,7 +3774,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 25,
@@ -685,7 +3889,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -698,7 +3902,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 26,
@@ -712,7 +4017,7 @@
       "newPrice": "$19.00",
       "isHot": false,
       "discount": null,
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "Stylish and comfortable headphones for everyday use.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -725,7 +4030,108 @@
       "stock": 5,
       "isFeatured": false,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:10:02"
+      "publishDate": "2024-09-30 12:10:02",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 27,
@@ -739,7 +4145,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -752,7 +4158,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 28,
@@ -766,7 +4273,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -779,7 +4286,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 29,
@@ -793,7 +4401,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -806,7 +4414,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 30,
@@ -820,7 +4529,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -833,7 +4542,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     },
     {
       "id": 31,
@@ -847,7 +4657,7 @@
       "newPrice": "$19.00",
       "isHot": true,
       "discount": "-20%",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.",
       "shortDescription": "A high-quality speaker with powerful sound.",
       "SKU": "123456789",
       "sizes": ["XL", "L", "M", "S"],
@@ -860,7 +4670,108 @@
       "stock": 5,
       "isFeatured": true,
       "offerEnds": "2024-10-10 23:59:59",
-      "publishDate": "2024-09-30 12:00:00"
+      "publishDate": "2024-09-30 12:00:00",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Piezas",
+          "type": "label",
+          "values": [
+            { "id": 1, "name": "1 pieza", "value": "1 pieza" },
+            { "id": 2, "name": "2 piezas", "value": "2 piezas" },
+            { "id": 3, "name": "3 piezas", "value": "3 piezas" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 2,
+          "name": "Color",
+          "type": "color",
+          "values": [
+            { "id": 4, "name": "Blue", "value": "#0000FF" },
+            { "id": 5, "name": "Red", "value": "#FF0000" },
+            { "id": 6, "name": "Black", "value": "#000000" },
+            { "id": 7, "name": "Blanco", "value": "#ffffff" },
+            { "id": 8, "name": "Verde", "value": "#1db527" },
+            { "id": 9, "name": "Amarillo", "value": "#ffc107" }
+          ],
+          "isVariation": true
+        },
+        {
+          "id": 3,
+          "name": "Tamaño",
+          "type": "label",
+          "values": [
+            { "id": 10, "name": "30x60", "value": "30x60" },
+            { "id": 11, "name": "40x60", "value": "40x60" },
+            { "id": 12, "name": "50x60", "value": "50x60" },
+            { "id": 13, "name": "60x60", "value": "60x60" },
+            { "id": 14, "name": "70x70", "value": "70x70" },
+            { "id": 15, "name": "80x80", "value": "80x80" },
+            { "id": 16, "name": "90x90", "value": "90x90" },
+            { "id": 17, "name": "100x100", "value": "100x100" },
+            { "id": 18, "name": "200x200", "value": "200x200" }
+          ],
+          "isVariation": true
+        }
+      ],
+      "variations": [
+        {
+          "id": 1,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 4 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-BLU-1P-30x60"
+        },
+        {
+          "id": 2,
+          "attributes": [
+            { "attributeId": 1, "valueId": 1 },
+            { "attributeId": 2, "valueId": 5 },
+            { "attributeId": 3, "valueId": 10 }
+          ],
+          "price": "$20.00",
+          "stock": 10,
+          "SKU": "654613612-RED-1P-30x60"
+        },
+        {
+          "id": 3,
+          "attributes": [
+            { "attributeId": 1, "valueId": 2 },
+            { "attributeId": 2, "valueId": 7 },
+            { "attributeId": 3, "valueId": 14 }
+          ],
+          "price": "$30.00",
+          "stock": 5,
+          "SKU": "654613612-WHT-2P-70x70"
+        },
+        {
+          "id": 4,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 17 }
+          ],
+          "price": "$50.00",
+          "stock": 5,
+          "SKU": "654613612-BLK-3P-100x100"
+        },
+        {
+          "id": 5,
+          "attributes": [
+            { "attributeId": 1, "valueId": 3 },
+            { "attributeId": 2, "valueId": 6 },
+            { "attributeId": 3, "valueId": 18 }
+          ],
+          "price": "$70.00",
+          "stock": 0,
+          "SKU": "654613612-BLK-3P-200x200"
+        }
+      ]
     }
   ]
 }

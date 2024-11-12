@@ -50,6 +50,7 @@ export interface Variation {
 export interface VariationAttribute {
   attributeId: number;
   valueId: number;
+  orderMenu: number;
 }
 
 export interface BannerProps {

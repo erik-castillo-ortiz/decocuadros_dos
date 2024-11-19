@@ -5,12 +5,11 @@ class DetailedException:
     status_code: Optional[int] 
     detail:str=""
 
-    def __init__(self, **kwargs: dict[str, Any]) -> None:
-        if kwargs['status_code']:
-            self.status_code = kwargs['status_code']
-        if kwargs['detail']:
-            self.detail = kwargs['detail']
+    def __init__(self, status_code:int, detail:str, **kwargs: dict[str, Any]) -> None:
+        self.status_code = status_code
+        self.detail = detail
         # super().__init__(status_code=self.status_code, detail=self.detail, **kwargs)
+
 
 class NotFound(DetailedException):
     status_code: Optional[int] = status.HTTP_404_NOT_FOUND

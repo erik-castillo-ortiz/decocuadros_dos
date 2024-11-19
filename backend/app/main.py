@@ -4,6 +4,7 @@ from starlette.middleware.cors import CORSMiddleware
 #from app.items.router import router as items_router
 #from app.configuration.router import router as configurations_router
 #from app.auth.router import router as auth_router
+from app.products.router import router as products_router
 
 from app.config import app_configs, settings
 from sqlalchemy.orm import Session
@@ -35,18 +36,20 @@ app.add_middleware(
     allow_headers=settings.CORS_HEADERS,
 )
 
+app.include_router(products_router, prefix="/products", tags=["Productos"])
 
-@app.get("/get_user_by_id", response_model=UserOut)
-def get_user_by_id(id: int) -> dict[str, str]:
-    # print(query)
-    with use_database_session() as db:
-        repo = UserRepository(db)
-        (data, err) = repo.get(id)
-        if err:
-            raise HTTPException(status_code=err.status_code, detail=err.detail)
-        out = UserOut(id=data.id, name=data.name)
-    print(out)
-    return out
+
+# @app.get("/get_user_by_id", response_model=UserOut)
+# def get_user_by_id(id: int) -> dict[str, str]:
+#     # print(query)
+#     with use_database_session() as db:
+#         repo = UserRepository(db)
+#         (data, err) = repo.get(id)
+#         if err:
+#             raise HTTPException(status_code=err.status_code, detail=err.detail)
+#         out = UserOut(id=data.id, name=data.name)
+#     print(out)
+#     return out
 
 
     # return {"status": "ok"}

@@ -4,6 +4,7 @@ from app.constants import Environment
 
 class Config(BaseSettings):
     DATABASE_URL: str
+    SCHEMA: str = "public"  # Esquema por defecto
     REDIS_URL: RedisDsn
 
     SITE_DOMAIN: str = "myapp.com"

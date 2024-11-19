@@ -1,0 +1,14 @@
+-r base.txt
+black
+isort
+autoflake
+coverage
+flake8
+mypy
+pytest
+pytest-asyncio
+async-asgi-testclient
+pytest-env
+
+sqlalchemy2-stubs
+types-python-jose

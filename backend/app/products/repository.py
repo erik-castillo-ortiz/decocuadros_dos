@@ -2,11 +2,13 @@ from typing import Optional, Tuple
 
 from app.extensions import DetailedException, NotFound 
 from app.pagination import Params
-from app.products.models import Products
+from app.products.models import Products, ProductAttributes, Attributes, AttributeOptions, ProductVariants, ProductVariantOptions
 from app.products.schemas import GetPublicationsOut
 from app.repository import BaseRepository
 from sqlalchemy import func, select
- 
+from sqlalchemy.orm import joinedload
+
+
 class ProductRepository(BaseRepository):
     """Operations to interact with the `users` table in the database."""
 
@@ -14,6 +16,20 @@ class ProductRepository(BaseRepository):
         base_query = self.db.query(Products).filter(Products.id == id)
         
         return base_query.first()
+
+
+    def get_product_with_relations_by_slug(self, slug: str) -> Products:
+        return (
+            self.db.query(Products)
+            .filter(Products.slug == slug)
+            .options(
+                joinedload(Products.attributes).joinedload(ProductAttributes.attribute).joinedload(Attributes.options),
+                joinedload(Products.variants).joinedload(ProductVariants.variant_options).joinedload(ProductVariantOptions.attribute_option),
+                joinedload(Products.category),
+            )
+            .first()
+        )
+
 
     def get_products(self, params: Params, q = ""):
         params_base = params.to_raw_params()

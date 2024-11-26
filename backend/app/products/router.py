@@ -20,6 +20,16 @@ def get_products(
     
     return data
 
+@router.get("/{slug}")
+def get_product_by_slug(
+    slug: str,
+    service: ProductService = Depends(),
+):
+    data, err = service.get_product_by_slug(slug)
+    if err:
+        raise HTTPException(status_code=err.status_code, detail=err.detail)
+    return data
+
 @router.get("/{id}")
 def get_products(
     id: int, 

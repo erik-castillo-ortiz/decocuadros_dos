@@ -2,6 +2,8 @@ import productData from '@/app/helpers/products2.json';
 import { Product } from '@/app/(home)/components/types';
 import categories from '@/app/helpers/Categories_2.json';
 
+const BASE_URL = process.env.API_URL;
+
 export interface Category {
   categoryId: number;
   categoryName: string;
@@ -323,11 +325,33 @@ export const fetchCategoryData = async (categorySlug: string) => {
   console.log('category', category);
   return { ...category, fullPath: `/categoria/${fullPath}` };
 };
+// export const fetchProductBySlug = async (
+//   slug: string
+// ): Promise<Product | null> => {
+//   const product = productData.products.find(
+//     (prod: Product) => prod.slug === slug
+//   );
+//   return product || null;
+// };
 export const fetchProductBySlug = async (
   slug: string
 ): Promise<Product | null> => {
-  const product = productData.products.find(
-    (prod: Product) => prod.slug === slug
-  );
-  return product || null;
+  try {
+    // Realiza la solicitud al backend utilizando la base URL
+    const response = await fetch(`${BASE_URL}/products/${slug}`);
+
+    // Verifica si la respuesta es exitosa
+    if (!response.ok) {
+      console.error('Error fetching product by slug:', response.statusText);
+      return null;
+    }
+    // Parsear los datos de la respuesta
+    const product: Product = await response.json();
+    console.log(product);
+
+    return product;
+  } catch (error) {
+    console.error('Error fetching product by slug:', error);
+    return null;
+  }
 };

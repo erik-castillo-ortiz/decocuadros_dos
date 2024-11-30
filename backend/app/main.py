@@ -5,7 +5,8 @@ from starlette.middleware.cors import CORSMiddleware
 #from app.configuration.router import router as configurations_router
 #from app.auth.router import router as auth_router
 from app.products.router import router as products_router
-
+from app.cart.router import router as cart_router
+from app.users.router import router as users_router
 from app.config import app_configs, settings
 from sqlalchemy.orm import Session
 from .session import use_database_session
@@ -37,7 +38,8 @@ app.add_middleware(
 )
 
 app.include_router(products_router, prefix="/products", tags=["Productos"])
-
+app.include_router(cart_router, prefix="/cart", tags=["Cart"])
+app.include_router(users_router, prefix="/users", tags=["Users"])
 
 # @app.get("/get_user_by_id", response_model=UserOut)
 # def get_user_by_id(id: int) -> dict[str, str]:

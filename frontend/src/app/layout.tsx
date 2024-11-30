@@ -77,6 +77,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Breadcrumb from '@/app/components/BreadCrump';
 import '/public/assets/css/demo36.css';
 import '/public/assets/vendor/fontawesome-free/css/all.min.css';
+import '/public/assets/vendor/simple-line-icons/css/simple-line-icons.min.css';
 import TopNotice from '@/layouts/TopNotice';
 import Header from '@/layouts/Header';
 import Footer from '@/layouts/Footer';

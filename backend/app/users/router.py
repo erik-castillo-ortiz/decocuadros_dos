@@ -1,46 +1,3 @@
-# from fastapi import APIRouter, Depends, HTTPException, Response, Cookie
-# from app.users.services import UserService
-# from app.users.schemas import UserCreate, UserOut, UserLogin
-# from app.extensions import DetailedException
-
-# router = APIRouter()
-
-
-# @router.post("/register", response_model=UserOut)
-# def register_user(user: UserCreate, service: UserService = Depends()):
-#     try:
-#         return service.create_user(user)
-#     except DetailedException as err:
-#         raise HTTPException(status_code=err.status_code, detail=err.detail)
-
-
-# @router.post("/login", response_model=UserOut)
-# def login_user(
-#     user: UserLogin,
-#     response: Response,
-#     service: UserService = Depends()
-# ):
-#     try:
-#         logged_user = service.authenticate_user(user.email, user.password, response)
-#         if not response.headers.get("set-cookie"):
-#             raise HTTPException(status_code=500, detail="Session cookie not set")
-#         return logged_user
-#     except DetailedException as err:
-#         raise HTTPException(status_code=err.status_code, detail=err.detail)
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail="Internal Server Error")
-
-
-# @router.post("/logout")
-# def logout_user(
-#     response: Response,
-#     session_id: str = Cookie(None),  # Esto seguirá tomando la cookie automáticamente
-#     service: UserService = Depends()
-# ):
-#     if not session_id:
-#         raise HTTPException(status_code=400, detail="No session cookie found")  # Verifica que la cookie exista
-#     service.logout_user(response, session_id)  # Maneja la sesión en el backend
-#     return {"message": "Logged out successfully"}
 from fastapi import APIRouter, Depends, HTTPException, Response, Cookie
 from app.users.services import UserService
 from app.users.schemas import UserCreate, UserOut, UserLogin
@@ -110,3 +67,12 @@ def check_user_authentication(
 @router.get("/protected-route")
 def protected_route(session_id: str = Depends(validate_session)):
     return {"message": "You have access!", "session_id": session_id}
+    
+@router.get("/user", response_model=UserOut)
+def get_user(session_id: str = Cookie(None), service: UserService = Depends()):
+    if not session_id:
+        raise HTTPException(status_code=401, detail="No session cookie found")
+    try:
+        return service.get_user_by_session(session_id)
+    except DetailedException as err:
+        raise HTTPException(status_code=err.status_code, detail=err.detail)

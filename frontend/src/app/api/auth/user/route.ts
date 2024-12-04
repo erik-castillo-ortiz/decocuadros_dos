@@ -1,16 +1,16 @@
 import { NextResponse } from 'next/server';
-
 const BASE_URL = process.env.API_URL;
 
-export async function POST(request: Request) {
+export async function GET(request: Request) {
   try {
     const cookieHeader = request.headers.get('cookie') || '';
-    const response = await fetch(`${BASE_URL}/users/logout`, {
-      method: 'POST',
-      credentials: 'include',
+
+    const response = await fetch(`${BASE_URL}/users/user`, {
+      method: 'GET',
       headers: {
-        Cookie: cookieHeader, // Enviar cookies existentes
+        Cookie: cookieHeader, // Enviar las cookies existentes
       },
+      credentials: 'include',
     });
 
     if (!response.ok) {
@@ -18,10 +18,12 @@ export async function POST(request: Request) {
       return NextResponse.json(error, { status: response.status });
     }
 
-    return NextResponse.json({ message: 'Logged out successfully' });
+    const data = await response.json();
+    return NextResponse.json(data);
   } catch (error) {
+    console.error('Error fetching user data:', error);
     return NextResponse.json(
-      { detail: 'Error during logout request' },
+      { detail: 'Error fetching user data' },
       { status: 500 }
     );
   }

@@ -113,3 +113,9 @@ class UserRepository:
                 self.db.rollback()
                 raise e
         return False
+
+    def get_user_by_session(self, session_id: str) -> Users | None:
+        session = self.get_session_by_id(session_id)
+        if session and session.expires_at > datetime.utcnow():
+            return self.get_user_by_id(session.user_id)
+        return None

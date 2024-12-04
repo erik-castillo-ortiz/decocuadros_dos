@@ -4,35 +4,109 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
+interface User {
+  id: number;
+  email: string;
+  first_name: string;
+  last_name: string;
+  phone?: string; // Opcional
+  rut: string;
+}
+
 export default function Dashboard() {
+  // const router = useRouter();
+  // const [user, setUser] = useState(null);
+  // const [loading, setLoading] = useState(true);
+
+  // // Fetch user data
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     try {
+  //       const response = await fetch('/api/auth/check', {
+  //         method: 'GET',
+  //         credentials: 'include', // Include cookies in the request
+  //       });
+
+  //       if (response.ok) {
+  //         const userData = await response.json();
+  //         setUser(userData);
+  //       } else {
+  //         router.push('/auth/login'); // Redirect to login if not authenticated
+  //       }
+  //     } catch (error) {
+  //       console.error('Error fetching user data:', error);
+  //       router.push('/auth/login');
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchUser();
+  // }, [router]);
+
+  // const handleLogout = async () => {
+  //   try {
+  //     const response = await fetch('/api/auth/logout', {
+  //       method: 'POST',
+  //       credentials: 'include',
+  //     });
+
+  //     if (response.ok) {
+  //       router.push('/auth/login'); // Redirect to login after successful logout
+  //     } else {
+  //       const error = await response.json();
+  //       console.error('Logout error:', error.detail);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error during logout:', error);
+  //   }
+  // };
+
+  // if (loading) {
+  //   return <div>Loading...</div>;
+  // }
   const router = useRouter();
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null); // Especificamos el tipo del estado
   const [loading, setLoading] = useState(true);
 
-  // Fetch user data
+  // Obtener solo la primera palabra del primer nombre
+  const getFirstWord = (name: string) => name.split(' ')[0];
+
   useEffect(() => {
-    const fetchUser = async () => {
+    const validateSession = async () => {
       try {
-        const response = await fetch('/api/auth/check', {
+        // Validar sesión con /api/auth/check
+        const checkResponse = await fetch('/api/auth/check', {
           method: 'GET',
-          credentials: 'include', // Include cookies in the request
+          credentials: 'include',
         });
 
-        if (response.ok) {
-          const userData = await response.json();
+        if (!checkResponse.ok) {
+          router.push('/auth/login');
+          return;
+        }
+
+        // Obtener datos del usuario con /api/auth/user
+        const userResponse = await fetch('/api/auth/user', {
+          method: 'GET',
+          credentials: 'include',
+        });
+
+        if (userResponse.ok) {
+          const userData: User = await userResponse.json(); // Forzamos el tipo de la respuesta
           setUser(userData);
         } else {
-          router.push('/auth/login'); // Redirect to login if not authenticated
+          router.push('/auth/login');
         }
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error('Error validating session or fetching user:', error);
         router.push('/auth/login');
       } finally {
         setLoading(false);
       }
     };
 
-    fetchUser();
+    validateSession();
   }, [router]);
 
   const handleLogout = async () => {
@@ -43,7 +117,7 @@ export default function Dashboard() {
       });
 
       if (response.ok) {
-        router.push('/auth/login'); // Redirect to login after successful logout
+        router.push('/auth/login');
       } else {
         const error = await response.json();
         console.error('Logout error:', error.detail);
@@ -172,16 +246,16 @@ export default function Dashboard() {
           >
             <div className="dashboard-content">
               <p>
-                Hello <strong className="text-dark">{user?.name}</strong> (not{' '}
-                {/* {user?.name} Dejalos no mas hay que agregar un endpoint getuser */}
-                <strong className="text-dark">{user?.name}</strong>?{' '}
+                Hello{' '}
+                <strong className="text-dark">
+                  {user && getFirstWord(user.first_name)}
+                </strong>{' '}
+                (No eres{' '}
+                <strong className="text-dark">{user?.first_name}</strong>?{' '}
                 <Link
                   href="#"
                   className="btn btn-link p-0 text-decoration-none"
-                  onClick={(e) => {
-                    e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-                    handleLogout();
-                  }}
+                  onClick={handleLogout}
                 >
                   Log out
                 </Link>

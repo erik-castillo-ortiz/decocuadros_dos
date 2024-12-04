@@ -1,134 +1,42 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-
-interface User {
-  id: number;
-  email: string;
-  first_name: string;
-  last_name: string;
-  phone?: string; // Opcional
-  rut: string;
-}
+import { useUser } from '@/context/UserContext';
 
 export default function Dashboard() {
-  // const router = useRouter();
-  // const [user, setUser] = useState(null);
-  // const [loading, setLoading] = useState(true);
-
-  // // Fetch user data
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     try {
-  //       const response = await fetch('/api/auth/check', {
-  //         method: 'GET',
-  //         credentials: 'include', // Include cookies in the request
-  //       });
-
-  //       if (response.ok) {
-  //         const userData = await response.json();
-  //         setUser(userData);
-  //       } else {
-  //         router.push('/auth/login'); // Redirect to login if not authenticated
-  //       }
-  //     } catch (error) {
-  //       console.error('Error fetching user data:', error);
-  //       router.push('/auth/login');
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchUser();
-  // }, [router]);
-
-  // const handleLogout = async () => {
-  //   try {
-  //     const response = await fetch('/api/auth/logout', {
-  //       method: 'POST',
-  //       credentials: 'include',
-  //     });
-
-  //     if (response.ok) {
-  //       router.push('/auth/login'); // Redirect to login after successful logout
-  //     } else {
-  //       const error = await response.json();
-  //       console.error('Logout error:', error.detail);
-  //     }
-  //   } catch (error) {
-  //     console.error('Error during logout:', error);
-  //   }
-  // };
-
-  // if (loading) {
-  //   return <div>Loading...</div>;
-  // }
+  const { user, logout, isAuthenticated, loading } = useUser(); // Usar el contexto
   const router = useRouter();
-  const [user, setUser] = useState<User | null>(null); // Especificamos el tipo del estado
-  const [loading, setLoading] = useState(true);
 
   // Obtener solo la primera palabra del primer nombre
   const getFirstWord = (name: string) => name.split(' ')[0];
 
+  // Redirigir al login si no está autenticado
   useEffect(() => {
-    const validateSession = async () => {
-      try {
-        // Validar sesión con /api/auth/check
-        const checkResponse = await fetch('/api/auth/check', {
-          method: 'GET',
-          credentials: 'include',
-        });
+    if (!loading && !isAuthenticated) {
+      router.push('/auth/login');
+    }
+  }, [isAuthenticated, loading, router]);
 
-        if (!checkResponse.ok) {
-          router.push('/auth/login');
-          return;
-        }
-
-        // Obtener datos del usuario con /api/auth/user
-        const userResponse = await fetch('/api/auth/user', {
-          method: 'GET',
-          credentials: 'include',
-        });
-
-        if (userResponse.ok) {
-          const userData: User = await userResponse.json(); // Forzamos el tipo de la respuesta
-          setUser(userData);
-        } else {
-          router.push('/auth/login');
-        }
-      } catch (error) {
-        console.error('Error validating session or fetching user:', error);
-        router.push('/auth/login');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    validateSession();
-  }, [router]);
-
+  // Manejar logout con el contexto
   const handleLogout = async () => {
     try {
-      const response = await fetch('/api/auth/logout', {
-        method: 'POST',
-        credentials: 'include',
-      });
-
-      if (response.ok) {
-        router.push('/auth/login');
-      } else {
-        const error = await response.json();
-        console.error('Logout error:', error.detail);
-      }
+      await logout();
+      router.push('/auth/login'); // Redirigir al login tras logout
     } catch (error) {
       console.error('Error during logout:', error);
     }
   };
 
+  // Mostrar un indicador de carga mientras se valida la sesión
   if (loading) {
     return <div>Loading...</div>;
+  }
+
+  // Evitar renderizar contenido si no está autenticado
+  if (!isAuthenticated) {
+    return null;
   }
 
   return (
@@ -221,7 +129,6 @@ export default function Dashboard() {
                 Wishlist
               </a>
             </li>
-
             <li className="nav-item">
               <Link
                 href="#"

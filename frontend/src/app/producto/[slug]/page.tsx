@@ -1,21 +1,17 @@
 import { notFound } from 'next/navigation';
 import React from 'react';
 import { fetchProductBySlug } from '@/app/(home)/components/services/Services';
-// import { Product } from '@/app/(home)/components/types';
 import ProductGallery from '../components/ProductGallery';
 import ProductDetails from '../components/ProductDetails';
 import ProductTabs from '../components/ProductTabs';
 import RelatedProducts from '../components/RelatedProducts';
 
-interface ProductPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
-  const { slug } = params;
-  const fetchedProduct = await fetchProductBySlug(slug);
+export default async function ProductPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const fetchedProduct = await fetchProductBySlug(params.slug);
 
   if (!fetchedProduct) {
     notFound();
@@ -42,6 +38,4 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
       <RelatedProducts />
     </div>
   );
-};
-
-export default ProductPage;
+}

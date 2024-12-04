@@ -63,3 +63,24 @@ export const register = async (data: {
     return { error: 'Unexpected error occurred during registration.' };
   }
 };
+
+export const logout = async () => {
+  try {
+    const response = await fetch('/api/auth/logout', {
+      method: 'POST',
+      credentials: 'include',
+    });
+
+    if (!response.ok) {
+      const error = await response.json();
+      return { success: false, error: error.detail || 'Logout failed' };
+    }
+
+    return { success: true };
+  } catch {
+    return {
+      success: false,
+      error: 'Unexpected error occurred during logout.',
+    };
+  }
+};

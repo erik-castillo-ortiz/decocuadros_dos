@@ -1,10 +1,3 @@
-# import requests
-# from app.extensions import DetailedException
-# from app.pagination import Params
-# from app.products.repository import ProductRepository
-# from app.products.schemas import GetPublicationsPaginationOut
-# from app.session import use_database_session
-
 import requests
 from app.extensions import DetailedException
 from app.pagination import Params

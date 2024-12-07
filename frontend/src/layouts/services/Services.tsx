@@ -58,3 +58,32 @@ export const removeProductFromCart = async (productVariantId: number, quantity: 
     throw error;
   }
 };
+
+
+export const addProductToCart = async (productVariantId: number, quantity: number, cookieHeader: string) => {
+  try {
+    const response = await fetch(`${process.env.API_URL}/cart/add`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Cookie: cookieHeader,
+      },
+      credentials: 'include',
+      body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error('Error response from backend:', error);
+      throw new Error(`Failed to add product to cart: ${error}`);
+    }
+
+    const data = await response.json();
+    console.log('Successful response from backend:', data);
+
+    return data;
+  } catch (error) {
+    console.error('Error in addProductToCart service:', error);
+    throw error;
+  }
+};

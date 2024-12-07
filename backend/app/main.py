@@ -1,9 +1,6 @@
 from fastapi import FastAPI,Depends,HTTPException
 from starlette.middleware.cors import CORSMiddleware
 
-#from app.items.router import router as items_router
-#from app.configuration.router import router as configurations_router
-#from app.auth.router import router as auth_router
 from app.products.router import router as products_router
 from app.cart.router import router as cart_router
 from app.users.router import router as users_router
@@ -41,17 +38,3 @@ app.include_router(products_router, prefix="/products", tags=["Productos"])
 app.include_router(cart_router, prefix="/cart", tags=["Cart"])
 app.include_router(users_router, prefix="/users", tags=["Users"])
 
-# @app.get("/get_user_by_id", response_model=UserOut)
-# def get_user_by_id(id: int) -> dict[str, str]:
-#     # print(query)
-#     with use_database_session() as db:
-#         repo = UserRepository(db)
-#         (data, err) = repo.get(id)
-#         if err:
-#             raise HTTPException(status_code=err.status_code, detail=err.detail)
-#         out = UserOut(id=data.id, name=data.name)
-#     print(out)
-#     return out
-
-
-    # return {"status": "ok"}

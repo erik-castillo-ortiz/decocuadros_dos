@@ -67,3 +67,19 @@ class ProductRepository(BaseRepository):
 
         return (items_list, total)
 
+    def get_product_by_variant_id(self, variant_id: int) -> Tuple[Optional[Products], Optional[ProductVariants]]:
+        product_variant = (
+            self.db.query(ProductVariants)
+            .filter(ProductVariants.id == variant_id)
+            .join(Products)
+            .options(
+                joinedload(ProductVariants.product)
+            )
+            .first()
+        )
+
+        if not product_variant:
+            return None, None
+
+        return product_variant.product, product_variant
+

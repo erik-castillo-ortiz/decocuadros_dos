@@ -40,3 +40,13 @@ def get_products(
         raise HTTPException(status_code=err.status_code, detail=err.detail)
     
     return data
+
+@router.get("/variant/{variant_id}")
+def get_product_by_variant_id(
+    variant_id: int,
+    service: ProductService = Depends(),
+):
+    data, err = service.get_product_by_variant_id(variant_id)
+    if err:
+        raise HTTPException(status_code=err.status_code, detail=err.detail)
+    return data

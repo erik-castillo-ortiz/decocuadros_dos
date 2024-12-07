@@ -99,3 +99,18 @@ class ProductService:
                 return ( None, DetailedException(status_code=404, detail="Not Found"))
             
             return (item, None)
+            
+    def get_product_by_variant_id(self, variant_id: int):
+        with use_database_session() as db:
+            product_repo = ProductRepository(db)
+
+            product, variant = product_repo.get_product_by_variant_id(variant_id)
+            if not product or not variant:
+                return None, DetailedException(status_code=404, detail="Product variant not found")
+
+            return {
+                "name": product.name,
+                "slug": product.slug,
+                "image_url": product.image,
+                "price": float(variant.price),
+            }, None

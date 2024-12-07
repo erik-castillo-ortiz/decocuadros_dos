@@ -15,19 +15,6 @@ def get_cart(
     cart = service.get_or_create_cart(session_id=session_id, cart_hash=cart_hash, response=response)
     return cart
 
-
-# @router.post("/add", response_model=CartOut)
-# def add_to_cart(
-#     data: AddToCart,
-#     response: Response,
-#     session_id: str = Cookie(None),
-#     cart_hash: str = Cookie(None),
-#     service: CartService = Depends(),
-# ):
-#     cart = service.get_or_create_cart(session_id=session_id, cart_hash=cart_hash, response=response)
-#     service.add_to_cart(cart, data.product_variant_id, data.quantity)
-#     return cart
-
 @router.post("/add", response_model=CartOut)
 def add_to_cart(
     data: AddToCart,
@@ -52,15 +39,12 @@ def add_to_cart(
 #     user_id: int = None,
 #     service: CartService = Depends(),
 # ):
-#     # Obtén el carrito
+#     # Obtén el carrito existente
 #     cart = service.get_or_create_cart(session_id=session_id, user_id=user_id, cart_hash=cart_hash, response=response)
-    
-#     # Depuración
-#     print(f"Removing product_variant_id: {data.product_variant_id} with quantity: {data.quantity} from cart ID: {cart.id}")
-    
-#     # Llama al servicio para eliminar
-#     service.remove_from_cart(cart, data.product_variant_id, data.quantity)
-#     return cart
+
+#     # Elimina el ítem y devuelve el carrito actualizado
+#     updated_cart = service.remove_from_cart(cart, data.product_variant_id, data.quantity)
+#     return updated_cart
 
 @router.delete("/remove", response_model=CartOut)
 def remove_from_cart(
@@ -71,26 +55,26 @@ def remove_from_cart(
     user_id: int = None,
     service: CartService = Depends(),
 ):
-    # Obtén el carrito existente
-    cart = service.get_or_create_cart(session_id=session_id, user_id=user_id, cart_hash=cart_hash, response=response)
+    print(f"Received data: {data}")
+    print(f"Session ID: {session_id}")
+    print(f"Cart Hash: {cart_hash}")
+    print(f"User ID: {user_id}")
 
-    # Elimina el ítem y devuelve el carrito actualizado
-    updated_cart = service.remove_from_cart(cart, data.product_variant_id, data.quantity)
-    return updated_cart
+    try:
+        # Obtén el carrito existente
+        cart = service.get_or_create_cart(session_id=session_id, user_id=user_id, cart_hash=cart_hash, response=response)
+        print(f"Cart found: {cart}")
 
+        # Elimina el ítem y devuelve el carrito actualizado
+        updated_cart = service.remove_from_cart(cart, data.product_variant_id, data.quantity)
+        print(f"Updated cart: {updated_cart}")
 
+        return updated_cart
+    except Exception as e:
+        print(f"Error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
-# @router.delete("/clear", response_model=CartOut)
-# def clear_cart(
-#     response: Response,
-#     session_id: str = Cookie(None),
-#     cart_hash: str = Cookie(None),
-#     service: CartService = Depends(),
-# ):
-#     cart = service.get_or_create_cart(session_id=session_id, cart_hash=cart_hash, response=response)
-#     service.clear_cart(cart)
-#     return cart
-
+        
 @router.delete("/clear", response_model=CartOut)
 def clear_cart(
     response: Response,
@@ -105,17 +89,6 @@ def clear_cart(
     updated_cart = service.clear_cart(cart)
     return updated_cart
 
-# @router.post("/merge", response_model=CartOut)
-# def merge_guest_cart_to_user_cart(
-#     response: Response,
-#     session_id: str = Cookie(None),
-#     cart_hash: str = Cookie(None),
-#     service: CartService = Depends(),
-# ):
-#     guest_cart = service.get_or_create_cart(session_id=session_id, cart_hash=cart_hash, response=response)
-#     user_cart = service.get_or_create_cart(response=response)
-#     service.merge_carts(user_cart, guest_cart)
-#     return user_cart
 @router.post("/merge", response_model=CartOut)
 def merge_guest_cart_to_user_cart(
     response: Response,

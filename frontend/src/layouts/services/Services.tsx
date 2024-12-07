@@ -23,17 +23,38 @@ export const getProductVariantDetails = async (variantId: string) => {
   }
 };
 
-export const removeProductFromCart = async (productVariantId: number, quantity: number) => {
-  const response = await fetch(`${process.env.API_URL}/cart/remove`, {
-    method: 'DELETE',
-    headers: { 'Content-Type': 'application/json' },
-    credentials: 'include',
-    body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
-  });
+export const removeProductFromCart = async (productVariantId: number, quantity: number, cookieHeader: string) => {
+  console.log('Sending request to backend to remove product');
+    console.log('Product Variant ID:', productVariantId);
+    console.log('Quantity:', quantity);
+    console.log('Cookies:', cookieHeader);
+  try {
+    
 
-  if (!response.ok) {
-    throw new Error('Failed to remove product from cart');
+    const response = await fetch(`${process.env.API_URL}/cart/remove`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        Cookie: cookieHeader,
+      },
+      credentials: 'include',
+      body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+    });
+
+    console.log('Backend response status:', response.status);
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error('Error response from backend:', error);
+      throw new Error(`Failed to remove product from cart: ${error}`);
+    }
+
+    const data = await response.json();
+    console.log('Successful response from backend:', data);
+
+    return data;
+  } catch (error) {
+    console.error('Error in removeProductFromCart service:', error);
+    throw error;
   }
-
-  return await response.json();
 };

@@ -81,25 +81,25 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     fetchCart();
   }, [isAuthenticated]);
 
-  // Función para agregar al carrito
-  const addToCart = async (productVariantId: number, quantity: number) => {
-    try {
-      const response = await fetch('/api/cart/add', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
-      });
+  // // Función para agregar al carrito
+  // const addToCart = async (productVariantId: number, quantity: number) => {
+  //   try {
+  //     const response = await fetch('/api/cart/add', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       credentials: 'include',
+  //       body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+  //     });
 
-      if (response.ok) {
-        await fetchCart();
-      }
-    } catch (error) {
-      console.error('Error adding to cart:', error);
-    }
-  };
+  //     if (response.ok) {
+  //       await fetchCart();
+  //     }
+  //   } catch (error) {
+  //     console.error('Error adding to cart:', error);
+  //   }
+  // };
 
-  // Función para eliminar del carrito con la nueva lógica
+
   // const removeFromCart = async (productVariantId: number, quantity: number) => {
   //   try {
   //     const response = await fetch('/api/cart/remove', {
@@ -108,9 +108,16 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   //       credentials: 'include',
   //       body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
   //     });
-
+  
   //     if (response.ok) {
-  //       await fetchCart();
+  //       // Actualiza el estado local del carrito eliminando el ítem correspondiente
+  //       setCart((prevCart) => {
+  //         if (!prevCart) return null;
+  //         return {
+  //           ...prevCart,
+  //           items: prevCart.items.filter((item) => item.product_variant_id !== productVariantId),
+  //         };
+  //       });
   //     } else {
   //       const errorData = await response.json();
   //       console.error('Error response from API:', errorData);
@@ -119,33 +126,86 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   //     console.error('Error removing from cart:', error);
   //   }
   // };
-  const removeFromCart = async (productVariantId: number, quantity: number) => {
-    try {
-      const response = await fetch('/api/cart/remove', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
-      });
-  
-      if (response.ok) {
-        // Actualiza el estado local del carrito eliminando el ítem correspondiente
-        setCart((prevCart) => {
-          if (!prevCart) return null;
-          return {
-            ...prevCart,
-            items: prevCart.items.filter((item) => item.product_variant_id !== productVariantId),
-          };
-        });
+  // Función para agregar al carrito
+const addToCart = async (productVariantId: number, quantity: number) => {
+  try {
+    setCart((prevCart) => {
+      if (!prevCart) return null;
+
+      const existingItemIndex = prevCart.items.findIndex(
+        (item) => item.product_variant_id === productVariantId
+      );
+
+      let updatedItems;
+      if (existingItemIndex !== -1) {
+        // Si el ítem ya existe, actualizamos la cantidad
+        updatedItems = prevCart.items.map((item, index) =>
+          index === existingItemIndex
+            ? { ...item, quantity: item.quantity + quantity }
+            : item
+        );
       } else {
-        const errorData = await response.json();
-        console.error('Error response from API:', errorData);
+        // Si el ítem no existe, lo añadimos
+        updatedItems = [
+          ...prevCart.items,
+          { id: Date.now(), product_variant_id: productVariantId, quantity },
+        ];
       }
-    } catch (error) {
-      console.error('Error removing from cart:', error);
+
+      return { ...prevCart, items: updatedItems };
+    });
+
+    const response = await fetch('/api/cart/add', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+    });
+
+    if (!response.ok) {
+      // Revertir el cambio local si la petición falla
+      await fetchCart();
     }
-  };
-  
+  } catch (error) {
+    console.error('Error adding to cart:', error);
+    await fetchCart();
+  }
+};
+
+// Función para eliminar del carrito
+const removeFromCart = async (productVariantId: number, quantity: number) => {
+  try {
+    setCart((prevCart) => {
+      if (!prevCart) return null;
+
+      const updatedItems = prevCart.items
+        .map((item) =>
+          item.product_variant_id === productVariantId
+            ? { ...item, quantity: item.quantity - quantity }
+            : item
+        )
+        .filter((item) => item.quantity > 0);
+
+      return { ...prevCart, items: updatedItems };
+    });
+
+    const response = await fetch('/api/cart/remove', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+    });
+
+    if (!response.ok) {
+      // Revertir el cambio local si la petición falla
+      await fetchCart();
+    }
+  } catch (error) {
+    console.error('Error removing from cart:', error);
+    await fetchCart();
+  }
+};
+
   // Función para fusionar el carrito de invitado con el de usuario autenticado
   const mergeCart = async () => {
     try {

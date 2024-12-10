@@ -6,9 +6,8 @@ from fastapi import HTTPException
 import uuid
 from app.cart.models import Carts
 from sqlalchemy.exc import SQLAlchemyError
-
 from sqlalchemy import create_engine, event, text
-
+from sqlalchemy.orm import joinedload
 from app.config import settings
 
 
@@ -56,6 +55,8 @@ class CartService:
 
     def add_to_cart(self, cart, product_variant_id: int, quantity: int):
         with use_database_session() as db:
+            current_schema = db.execute(text("SHOW search_path")).fetchone()
+            print(f"create_user: Current search_path: {current_schema}")
             repo = CartRepository(db)
 
             # Busca el ítem directamente en la base de datos
@@ -73,28 +74,6 @@ class CartService:
             db.refresh(updated_cart, ["items"])  # Asegúrate de cargar los ítems relacionados
             return updated_cart
 
-
-    # def remove_from_cart(self, cart, product_variant_id: int, quantity: int = None):
-    #     with use_database_session() as db:
-    #         repo = CartRepository(db)
-
-    #         # Busca el ítem directamente en la base de datos
-    #         item = repo.get_cart_item(cart.id, product_variant_id)
-    #         if not item:
-    #             raise HTTPException(status_code=404, detail="Item not found in cart")
-
-    #         if quantity is None or quantity >= item.quantity:
-    #             # Si no se proporciona cantidad o es mayor o igual al stock actual, elimina el ítem
-    #             repo.remove_cart_item(item)
-    #         else:
-    #             # Reduce la cantidad
-    #             item.quantity -= quantity
-    #             db.commit()
-
-    #         # Obtén el carrito actualizado con sus ítems
-    #         updated_cart = repo.get_cart_by_hash(cart.cart_hash)
-    #         db.refresh(updated_cart, ["items"])  # Asegúrate de cargar los ítems relacionados
-    #         return updated_cart
     def remove_from_cart(self, cart, product_variant_id: int, quantity: int = None):
         with use_database_session() as db:
             repo = CartRepository(db)
@@ -200,6 +179,8 @@ class CartService:
 
     def get_cart_by_hash(self, cart_hash: str) -> Carts | None:
         with use_database_session() as db:
+            current_schema = db.execute(text("SHOW search_path")).fetchone()
+            print(f"create_user: Current search_path: {current_schema}")
             repo = CartRepository(db)
             cart = repo.get_cart_by_hash(cart_hash)
             return db.merge(cart) if cart else None
@@ -237,28 +218,34 @@ class CartService:
                 repo.clear_cart(guest_cart)
                 db.delete(guest_cart)
                 db.commit()
-                db.refresh(user_cart, ["items"])
-                return {"cart": user_cart, "cart_hash": user_cart.cart_hash}
+
+                # Obtener carrito actualizado después del commit
+                updated_cart = repo.get_cart_by_hash(user_cart.cart_hash)
+                db.refresh(updated_cart, ["items"])
+                return {"cart": updated_cart, "cart_hash": updated_cart.cart_hash}
 
             # Si solo existe carrito de invitado, vincularlo al usuario
             if guest_cart:
                 guest_cart.user_id = user.id
                 guest_cart.session_id = session_id
                 db.commit()
-                db.refresh(guest_cart, ["items"])
-                return {"cart": guest_cart, "cart_hash": guest_cart.cart_hash}
+
+                # Obtener carrito actualizado después del commit
+                updated_cart = repo.get_cart_by_hash(guest_cart.cart_hash)
+                db.refresh(updated_cart, ["items"])
+                return {"cart": updated_cart, "cart_hash": updated_cart.cart_hash}
 
             # Si solo existe carrito de usuario, retornarlo
             if user_cart:
-                db.refresh(user_cart, ["items"])
-                return {"cart": user_cart, "cart_hash": user_cart.cart_hash}
+                updated_cart = repo.get_cart_by_hash(user_cart.cart_hash)
+                db.refresh(updated_cart, ["items"])
+                return {"cart": updated_cart, "cart_hash": updated_cart.cart_hash}
 
             # Si no hay ningún carrito, crear uno nuevo
             new_cart = repo.create_cart(user_id=user.id, session_id=session_id, cart_hash=str(uuid.uuid4()))
             db.commit()
-            db.refresh(new_cart, ["items"])
-            return {"cart": new_cart, "cart_hash": new_cart.cart_hash}
 
-
-
-
+            # Obtener carrito actualizado después del commit
+            updated_cart = repo.get_cart_by_hash(new_cart.cart_hash)
+            db.refresh(updated_cart, ["items"])
+            return {"cart": updated_cart, "cart_hash": updated_cart.cart_hash}

@@ -81,80 +81,125 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     fetchCart();
   }, [isAuthenticated]);
 
-  // // Función para agregar al carrito
-  // const addToCart = async (productVariantId: number, quantity: number) => {
-  //   try {
-  //     const response = await fetch('/api/cart/add', {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       credentials: 'include',
-  //       body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
-  //     });
+// const addToCart = async (productVariantId: number, quantity: number) => {
+//   try {
+//     setCart((prevCart) => {
+//       if (!prevCart) return null;
 
-  //     if (response.ok) {
-  //       await fetchCart();
-  //     }
-  //   } catch (error) {
-  //     console.error('Error adding to cart:', error);
-  //   }
-  // };
+//       const existingItemIndex = prevCart.items.findIndex(
+//         (item) => item.product_variant_id === productVariantId
+//       );
 
+//       let updatedItems;
+//       if (existingItemIndex !== -1) {
+//         // Si el ítem ya existe, actualizamos la cantidad
+//         updatedItems = prevCart.items.map((item, index) =>
+//           index === existingItemIndex
+//             ? { ...item, quantity: item.quantity + quantity }
+//             : item
+//         );
+//       } else {
+//         // Si el ítem no existe, lo añadimos
+//         updatedItems = [
+//           ...prevCart.items,
+//           { id: Date.now(), product_variant_id: productVariantId, quantity },
+//         ];
+//       }
 
-  // const removeFromCart = async (productVariantId: number, quantity: number) => {
-  //   try {
-  //     const response = await fetch('/api/cart/remove', {
-  //       method: 'DELETE',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       credentials: 'include',
-  //       body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
-  //     });
-  
-  //     if (response.ok) {
-  //       // Actualiza el estado local del carrito eliminando el ítem correspondiente
-  //       setCart((prevCart) => {
-  //         if (!prevCart) return null;
-  //         return {
-  //           ...prevCart,
-  //           items: prevCart.items.filter((item) => item.product_variant_id !== productVariantId),
-  //         };
-  //       });
-  //     } else {
-  //       const errorData = await response.json();
-  //       console.error('Error response from API:', errorData);
-  //     }
-  //   } catch (error) {
-  //     console.error('Error removing from cart:', error);
-  //   }
-  // };
-  // Función para agregar al carrito
+//       return { ...prevCart, items: updatedItems };
+//     });
+
+//     const response = await fetch('/api/cart/add', {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       credentials: 'include',
+//       body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+//     });
+
+//     if (!response.ok) {
+//       // Revertir el cambio local si la petición falla
+//       await fetchCart();
+//     }
+//   } catch (error) {
+//     console.error('Error adding to cart:', error);
+//     await fetchCart();
+//   }
+// };
+// const addToCart = async (productVariantId: number, quantity: number) => {
+//   setCart((prevCart) => {
+//     if (!prevCart) return null;
+
+//     const existingItemIndex = prevCart.items.findIndex(
+//       (item) => item.product_variant_id === productVariantId
+//     );
+
+//     let updatedItems;
+//     if (existingItemIndex !== -1) {
+//       updatedItems = prevCart.items.map((item, index) =>
+//         index === existingItemIndex
+//           ? { ...item, quantity: item.quantity + quantity }
+//           : item
+//       );
+//     } else {
+//       updatedItems = [
+//         ...prevCart.items,
+//         { id: Date.now(), product_variant_id: productVariantId, quantity },
+//       ];
+//     }
+
+//     return { ...prevCart, items: updatedItems };
+//   });
+
+//   // Realizar la llamada al servidor en segundo plano
+//   try {
+//     const response = await fetch('/api/cart/add', {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       credentials: 'include',
+//       body: JSON.stringify({ product_variant_id: productVariantId, quantity }),
+//     });
+
+//     if (!response.ok) {
+//       // Revertir si la llamada falla
+//       await fetchCart();
+//     }
+//   } catch (error) {
+//     console.error('Error adding to cart:', error);
+//     await fetchCart();
+//   }
+// };
+
 const addToCart = async (productVariantId: number, quantity: number) => {
-  try {
-    setCart((prevCart) => {
-      if (!prevCart) return null;
+  let rollbackCart: Cart | null = null;
 
-      const existingItemIndex = prevCart.items.findIndex(
-        (item) => item.product_variant_id === productVariantId
+  setCart((prevCart) => {
+    if (!prevCart) return null;
+
+    rollbackCart = JSON.parse(JSON.stringify(prevCart)); // Crear una copia profunda para revertir si falla
+
+    const existingItemIndex = prevCart.items.findIndex(
+      (item) => item.product_variant_id === productVariantId
+    );
+
+    let updatedItems;
+    if (existingItemIndex !== -1) {
+      updatedItems = prevCart.items.map((item, index) =>
+        index === existingItemIndex
+          ? { ...item, quantity: item.quantity + quantity }
+          : item
       );
+    } else {
+      updatedItems = [
+        ...prevCart.items,
+        { id: Date.now(), product_variant_id: productVariantId, quantity },
+      ];
+    }
 
-      let updatedItems;
-      if (existingItemIndex !== -1) {
-        // Si el ítem ya existe, actualizamos la cantidad
-        updatedItems = prevCart.items.map((item, index) =>
-          index === existingItemIndex
-            ? { ...item, quantity: item.quantity + quantity }
-            : item
-        );
-      } else {
-        // Si el ítem no existe, lo añadimos
-        updatedItems = [
-          ...prevCart.items,
-          { id: Date.now(), product_variant_id: productVariantId, quantity },
-        ];
-      }
+    return { ...prevCart, items: updatedItems };
+  });
 
-      return { ...prevCart, items: updatedItems };
-    });
-
+  try {
+    // Llamada al servidor para agregar el producto
     const response = await fetch('/api/cart/add', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -163,14 +208,29 @@ const addToCart = async (productVariantId: number, quantity: number) => {
     });
 
     if (!response.ok) {
-      // Revertir el cambio local si la petición falla
-      await fetchCart();
+      throw new Error('Failed to add item to cart');
     }
+
+    // Obtener detalles del producto añadido
+    const productDetails = await getProductVariantDetails(productVariantId.toString());
+
+    setCart((prevCart) => {
+      if (!prevCart) return null;
+
+      const updatedItems = prevCart.items.map((item) =>
+        item.product_variant_id === productVariantId && !item.name
+          ? { ...item, ...productDetails }
+          : item
+      );
+
+      return { ...prevCart, items: updatedItems };
+    });
   } catch (error) {
     console.error('Error adding to cart:', error);
-    await fetchCart();
+    setCart(rollbackCart); // Revertir el cambio local si hay un error
   }
 };
+
 
 // Función para eliminar del carrito
 const removeFromCart = async (productVariantId: number, quantity: number) => {
@@ -213,14 +273,17 @@ const removeFromCart = async (productVariantId: number, quantity: number) => {
         method: 'POST',
         credentials: 'include',
       });
-
+  
       if (response.ok) {
-        await fetchCart();
+        await fetchCart(); // Refresca el carrito después de fusionar
+      } else {
+        console.error('Failed to merge cart');
       }
     } catch (error) {
       console.error('Error merging cart:', error);
     }
   };
+  
 
   // Función para limpiar el carrito
   const clearCart = async () => {

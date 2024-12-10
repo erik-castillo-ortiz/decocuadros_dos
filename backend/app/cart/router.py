@@ -30,22 +30,6 @@ def add_to_cart(
     updated_cart = service.add_to_cart(cart, data.product_variant_id, data.quantity)
     return updated_cart
 
-# @router.delete("/remove", response_model=CartOut)
-# def remove_from_cart(
-#     response: Response,
-#     data: RemoveFromCart,
-#     session_id: str = Cookie(None),
-#     cart_hash: str = Cookie(None),
-#     user_id: int = None,
-#     service: CartService = Depends(),
-# ):
-#     # Obtén el carrito existente
-#     cart = service.get_or_create_cart(session_id=session_id, user_id=user_id, cart_hash=cart_hash, response=response)
-
-#     # Elimina el ítem y devuelve el carrito actualizado
-#     updated_cart = service.remove_from_cart(cart, data.product_variant_id, data.quantity)
-#     return updated_cart
-
 @router.delete("/remove", response_model=CartOut)
 def remove_from_cart(
     response: Response,

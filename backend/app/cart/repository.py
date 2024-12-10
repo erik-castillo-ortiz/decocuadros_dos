@@ -40,13 +40,6 @@ class CartRepository:
             raise
         return new_item
 
-    # def get_cart_item(self, cart_id: int, product_variant_id: int) -> CartItems | None:
-    #     # Busca el item directamente en la base de datos usando cart_id y product_variant_id
-    #     return (
-    #         self.db.query(CartItems)
-    #         .filter(CartItems.cart_id == cart_id, CartItems.product_variant_id == product_variant_id)
-    #         .first()
-    #     )
     def get_cart_item(self, cart_id: int, product_variant_id: int) -> CartItems | None:
         # Busca el ítem en la base de datos con el ID del carrito y el ID de la variante
         return (

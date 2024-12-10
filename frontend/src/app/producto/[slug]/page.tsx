@@ -12,7 +12,7 @@ export default async function ProductPage({
   params: { slug: string };
 }) {
   const fetchedProduct = await fetchProductBySlug(params.slug);
-
+  console.log(fetchedProduct);
   if (!fetchedProduct) {
     notFound();
   }

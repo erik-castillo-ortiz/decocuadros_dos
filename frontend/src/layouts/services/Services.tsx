@@ -87,3 +87,30 @@ export const addProductToCart = async (productVariantId: number, quantity: numbe
     throw error;
   }
 };
+
+export const mergeGuestCartToUserCart = async (cookieHeader: string) => {
+  try {
+    const response = await fetch(`${process.env.API_URL}/cart/merge`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Cookie: cookieHeader,
+      },
+      credentials: 'include',
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error('Error response from backend:', error);
+      throw new Error(`Failed to merge cart: ${error}`);
+    }
+
+    const data = await response.json();
+    console.log('Successful response from backend:', data);
+
+    return data;
+  } catch (error) {
+    console.error('Error in mergeGuestCartToUserCart service:', error);
+    throw error;
+  }
+};

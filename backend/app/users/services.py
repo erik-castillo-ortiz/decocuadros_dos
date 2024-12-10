@@ -5,6 +5,8 @@ from app.session import use_database_session
 import bcrypt
 from fastapi.responses import Response
 from datetime import datetime, timedelta
+from sqlalchemy import text
+
 
 class UserService:
     def __init__(self):
@@ -18,12 +20,31 @@ class UserService:
                 raise DetailedException(status_code=404, detail="User not found")
             return user
 
+    # def create_user(self, user_data: UserCreate):
+    #     with use_database_session() as db:
+    #         repo = UserRepository(db)
+    #         existing_user = repo.get_user_by_email(user_data.email)
+    #         if existing_user:
+    #             raise DetailedException(status_code=400, detail="Email already registered")
+    #         password_hash = self.hash_password(user_data.password)
+    #         return repo.create_user(
+    #             email=user_data.email,
+    #             password_hash=password_hash,
+    #             first_name=user_data.first_name,
+    #             last_name=user_data.last_name,
+    #             phone=user_data.phone,
+    #             rut=user_data.rut,
+    #         )
     def create_user(self, user_data: UserCreate):
         with use_database_session() as db:
+            current_schema = db.execute(text("SHOW search_path")).fetchone()
+            print(f"create_user: Current search_path: {current_schema}")
+            
             repo = UserRepository(db)
             existing_user = repo.get_user_by_email(user_data.email)
             if existing_user:
                 raise DetailedException(status_code=400, detail="Email already registered")
+            
             password_hash = self.hash_password(user_data.password)
             return repo.create_user(
                 email=user_data.email,
@@ -33,7 +54,6 @@ class UserService:
                 phone=user_data.phone,
                 rut=user_data.rut,
             )
-
     def authenticate_user(self, email: str, password: str, response: Response):
         try:
             with use_database_session() as db:
